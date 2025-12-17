@@ -1,18 +1,58 @@
 {
   "games": [
-    {
-      "id": "FFI",
-      "label": "Final Fantasy I",
-      "chapters": [
-        { "title": "Getting Started", "desc": "Party setup basics, early tips, and beginner mistakes to avoid.", "guides": [] },
-        { "title": "Main Story Walkthrough", "desc": "Chapter-by-chapter main story walkthrough.", "guides": [] },
-        { "title": "Classes & Builds", "desc": "Class choices, party roles, and strong team setups.", "guides": [] },
-        { "title": "Boss Guides", "desc": "Boss strategies and preparation checklists.", "guides": [] },
-        { "title": "Side Quests & Optional Content", "desc": "Optional areas, upgrades, and secrets.", "guides": [] },
-        { "title": "Endgame & Optimization", "desc": "Endgame prep, best gear, and efficient leveling.", "guides": [] },
-        { "title": "Missables & Tips", "desc": "Things to watch for, helpful shortcuts, and quality-of-life tips.", "guides": [] },
-        { "title": "Game-Specific: Spell Charges & Vancian Magic", "desc": "How spell charges work, efficient spell usage, and planning your runs.", "guides": [] }
-      ]
+"guides": [
+  {
+    "title": "Chapter 1 — Cornelia & The First Steps",
+    "desc": "Cornelia basics, smart early gear buys, and preparing for your first dungeon push.",
+    "url": "/Final-Fantasy-Compendium/walkthroughs/ffi/chapter-01.html"
+  },
+  {
+    "title": "Chapter 2 — The First Quest: Temple of Fiends",
+    "desc": "Your first real dungeon: route, enemies, and boss prep.",
+    "url": "/Final-Fantasy-Compendium/walkthroughs/ffi/chapter-02.html"
+  },
+  {
+    "title": "Chapter 3 — Pravoka & Your First Big Upgrade",
+    "desc": "New town loop, equipment upgrades, and your next travel goals.",
+    "url": "/Final-Fantasy-Compendium/walkthroughs/ffi/chapter-03.html"
+  },
+  {
+    "title": "Chapter 4 — The Western Keep: Marsh Cave",
+    "desc": "A difficulty spike: survival routing, resource management, and safe clears.",
+    "url": "/Final-Fantasy-Compendium/walkthroughs/ffi/chapter-04.html"
+  },
+  {
+    "title": "Chapter 5 — Melmond & The Earth Crisis",
+    "desc": "Progression reset, new tools, and getting ready for the next major dungeon.",
+    "url": "/Final-Fantasy-Compendium/walkthroughs/ffi/chapter-05.html"
+  },
+  {
+    "title": "Chapter 6 — Cavern of Earth",
+    "desc": "Dungeon routing, key pickups, and boss strategy.",
+    "url": "/Final-Fantasy-Compendium/walkthroughs/ffi/chapter-06.html"
+  },
+  {
+    "title": "Chapter 7 — Crescent Lake & Gurgu Volcano",
+    "desc": "Magic/gear milestones, then a long lava dungeon with major rewards.",
+    "url": "/Final-Fantasy-Compendium/walkthroughs/ffi/chapter-07.html"
+  },
+  {
+    "title": "Chapter 8 — The Sea & The Sunken Shrine",
+    "desc": "Ocean navigation, underwater dungeon routing, and power growth.",
+    "url": "/Final-Fantasy-Compendium/walkthroughs/ffi/chapter-08.html"
+  },
+  {
+    "title": "Chapter 9 — Mirage Tower & The Flying Fortress",
+    "desc": "Back-to-back endgame dungeons: safe routing, key items, and boss prep.",
+    "url": "/Final-Fantasy-Compendium/walkthroughs/ffi/chapter-09.html"
+  },
+  {
+    "title": "Chapter 10 — The Chaos Shrine (Finale)",
+    "desc": "Final dungeon route, boss gauntlet notes, and endgame wrap-up.",
+    "url": "/Final-Fantasy-Compendium/walkthroughs/ffi/chapter-10.html"
+  }
+]
+
     },
     {
       "id": "FFII",
