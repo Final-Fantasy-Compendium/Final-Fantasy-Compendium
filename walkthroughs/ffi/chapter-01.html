@@ -1,1 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FFI Walkthrough — Chapter 1: Cornelia & The First Steps (Pixel Remaster)</title>
+  <meta name="description" content="Final Fantasy I Pixel Remaster walkthrough — Cornelia basics, early gear, and preparing for your first dungeon." />
+
+  <style>
+    :root{
+      --bg:#0b1020;
+      --panel:#0f1730;
+      --panel2:#101a33;
+      --text:#eaf0ff;
+      --muted:#a9b6d6;
+      --line:rgba(255,255,255,.10);
+      --accent:#67b7ff;
+      --radius:16px;
+      --max: 980px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:var(--max); margin:0 auto; padding:18px}
+    header{
+      position:sticky;
+      top:0;
+      background:#0b1020dd;
+      backdrop-filter: blur(10px);
+      border-bottom:1px solid var(--line);
+      z-index:10;
+    }
+    .top{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+    .brand{display:flex; gap:10px; align-items:baseline;}
+    .brand h1{font-size:14px; margin:0;}
+    .brand .muted{font-size:12px}
+    .muted{color:var(--muted)}
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:10px 12px;
+      border-radius:12px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.03);
+      color:var(--text);
+    }
+    .btn:hover{border-color:var(--accent); text-decoration:none}
+    main{padding:18px 0}
+    .card{
+      background:var(--panel);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:16px;
+      margin-bottom:14px;
+    }
+    .title{margin:0 0 6px; font-size:22px;}
+    .subtitle{margin:0; color:var(--muted)}
+    .meta{
+      display:flex; gap:10px; flex-wrap:wrap;
+      margin-top:12px; font-size:12px; color:var(--muted);
+    }
+    .tag{
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.03);
+      padding:4px 8px;
+      border-radius:999px;
+    }
+    .grid{display:grid; grid-template-columns: 1fr; gap:14px;}
+    @media (min-width: 900px){
+      .grid{grid-template-columns: 320px 1fr;}
+      .toc{position:sticky; top:74px;}
+    }
+    .toc h3{margin:0 0 10px; font-size:14px}
+    .toc a{display:block; padding:8px 10px; border-radius:10px;}
+    .toc a:hover{background:rgba(255,255,255,.03); text-decoration:none}
+    h2{margin:22px 0 10px; font-size:18px;}
+    h3{margin:18px 0 8px; font-size:15px;}
+    ul{margin:8px 0 0 18px}
+    li{margin:6px 0}
+    code{
+      background:rgba(255,255,255,.06);
+      border:1px solid var(--line);
+      padding:2px 6px;
+      border-radius:8px;
+      color:var(--text);
+    }
+    .callout{
+      border:1px dashed rgba(255,255,255,.22);
+      background:rgba(0,0,0,.10);
+      padding:12px;
+      border-radius:12px;
+      margin-top:12px;
+    }
+    .twoCol{display:grid; grid-template-columns: 1fr; gap:12px;}
+    @media (min-width: 760px){ .twoCol{grid-template-columns: 1fr 1fr;} }
+    .panel{
+      background:var(--panel2);
+      border:1px solid var(--line);
+      border-radius:12px;
+      padding:12px;
+    }
+    footer{
+      border-top:1px solid var(--line);
+      margin-top:18px;
+      padding:18px 0 28px;
+      color:var(--muted);
+      font-size:12px;
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <div class="wrap top">
+    <div class="brand">
+      <h1>Final Fantasy Compendium</h1>
+      <div class="muted">Walkthrough</div>
+    </div>
+    <div class="btnRow">
+      <a class="btn" href="/Final-Fantasy-Compendium/">← Back to Guides Hub</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="card">
+    <h1 class="title">Final Fantasy I (Pixel Remaster) — Chapter 1: Cornelia & The First Steps</h1>
+    <p class="subtitle">Get settled in Cornelia, make smart early purchases, and set up for your first dungeon.</p>
+
+    <div class="meta">
+      <span class="tag">Game: FFI (Pixel Remaster)</span>
+      <span class="tag">Chapter: 1</span>
+      <span class="tag">Estimated time: 20–45 min</span>
+      <span class="tag">Spoiler level: Low</span>
+    </div>
+
+    <div class="callout">
+      <strong>Goal:</strong> Leave Cornelia with enough gear and supplies to reach the Temple of Fiends comfortably.
+    </div>
+  </section>
+
+  <div class="grid">
+    <aside class="card toc">
+      <h3>On this page</h3>
+      <a href="#goals">Goals</a>
+      <a href="#party">Party Notes (Quick)</a>
+      <a href="#shopping">Shopping Priorities</a>
+      <a href="#steps">Step-by-step</a>
+      <a href="#tips">Tips & Mistakes</a>
+      <a href="#next">Next Chapter</a>
+    </aside>
+
+    <article class="card">
+      <h2 id="goals">Goals</h2>
+      <ul>
+        <li>Learn the “town loop”: shops → inn → save → head out.</li>
+        <li>Buy a few meaningful upgrades (don’t waste early gold).</li>
+        <li>Test fights just outside town and adjust if needed.</li>
+      </ul>
+
+      <h2 id="party">Party Notes (Quick)</h2>
+      <div class="twoCol">
+        <div class="panel">
+          <h3>General rule</h3>
+          <ul>
+            <li>Put tougher jobs in the front (they’ll take more hits).</li>
+            <li>If you’re taking heavy damage, prioritize armor next.</li>
+            <li>If fights are slow, prioritize weapons first.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Pixel Remaster habit</h3>
+          <ul>
+            <li>Keep your HP topped between fights; unlucky turns happen early.</li>
+            <li>Don’t be afraid to return to town — it’s efficient, not “cheating.”</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 id="shopping">Shopping Priorities</h2>
+      <ul>
+        <li><strong>Weapons first</strong> for your main damage dealer(s).</li>
+        <li><strong>Armor second</strong> if you’re losing too much HP per fight.</li>
+        <li>Buy a small stack of <strong>Potions</strong> (enough to survive bad luck, not enough to go broke).</li>
+      </ul>
+
+      <div class="callout">
+        <strong>Simple check:</strong> If you’re using 2–3 Potions every fight, you’re undergeared.
+      </div>
+
+      <h2 id="steps">Step-by-step</h2>
+
+      <h3>1) Explore Cornelia</h3>
+      <ul>
+        <li>Talk to NPCs to get basic direction and context.</li>
+        <li>Locate the Inn and the main shops (weapons/armor/items).</li>
+      </ul>
+
+      <h3>2) Buy key upgrades</h3>
+      <ul>
+        <li>Upgrade 1–2 weapons (frontliners / main attacker first).</li>
+        <li>Upgrade armor if needed (especially for whoever is taking the most hits).</li>
+        <li>Buy Potions (small stack).</li>
+      </ul>
+
+      <h3>3) Test combat just outside town</h3>
+      <ul>
+        <li>Fight a few battles near Cornelia.</li>
+        <li>Decide which problem you have: damage too low (weapon) or taking too much damage (armor).</li>
+        <li>If it feels rough: return to town, rest, and buy one more key upgrade.</li>
+      </ul>
+
+      <h3>4) Set up for the first dungeon push</h3>
+      <ul>
+        <li>Rest at the Inn so you begin at full strength.</li>
+        <li>Save your game before leaving town.</li>
+        <li>Head out toward your first main objective (covered next chapter).</li>
+      </ul>
+
+      <h2 id="tips">Tips & Mistakes</h2>
+      <ul>
+        <li><strong>Don’t overbuy items.</strong> Gear upgrades reduce item usage.</li>
+        <li><strong>Retreating is smart.</strong> Early FF1 is about safe, consistent progress.</li>
+        <li><strong>Focus fire.</strong> Removing one enemy fast prevents surprise KOs.</li>
+      </ul>
+
+      <h2 id="next">Next Chapter</h2>
+      <p class="muted">Next up: your first true dungeon — the Temple of Fiends (route + boss prep).</p>
+      <a class="btn" href="chapter-02.html">Next: Chapter 2 →</a>
+    </article>
+  </div>
+
+  <footer>
+    <div>© Final Fantasy Compendium — FFI Pixel Remaster Walkthrough.</div>
+    <div class="muted">File: walkthroughs/ffi/chapter-01.html</div>
+  </footer>
+</main>
+
+</body>
+</html>
 
