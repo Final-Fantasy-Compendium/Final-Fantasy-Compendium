@@ -25,6 +25,61 @@
               "title": "Best Job Combos (My Recommendations)",
               "desc": "An in-depth explanation of strong job pairings in Final Fantasy XII, covering role balance, weapon synergy, and why these combinations scale well into the endgame.",
               "url": "https://youtu.be/Jh82gOmG0Dg"
+        {
+  "title": "Main Story Walkthrough",
+  "desc": "Step-by-step walkthrough of the Final Fantasy XII main story, organized by chapter.",
+  "guides": [
+    {
+      "title": "Chapter 1 — Rabanastre & The Beginning",
+      "desc": "Walkthrough of the opening prologue, Rabanastre, and the palace escape."
+    },
+    {
+      "title": "Chapter 2 — The Dalmasca Estersand",
+      "desc": "Leaving Rabanastre, early overworld exploration, and first hunts."
+    },
+    {
+      "title": "Chapter 3 — The Tomb of Raithwall",
+      "desc": "Garamsythe Waterway, the tomb, and the introduction of Espers."
+    },
+    {
+      "title": "Chapter 4 — Jahara & The Henne Mines",
+      "desc": "Journey to Jahara, party expansion, and the Henne Mines dungeon."
+    },
+    {
+      "title": "Chapter 5 — Mt. Bur-Omisace",
+      "desc": "Crossing the Paramina Rift and confronting rising political tension."
+    },
+    {
+      "title": "Chapter 6 — Archades & Draklor Laboratory",
+      "desc": "Infiltrating Archades and escaping the Draklor Laboratory."
+    },
+    {
+      "title": "Chapter 7 — The Feywood & Giruvegan",
+      "desc": "Navigating the Feywood and uncovering the secrets of Giruvegan."
+    },
+    {
+      "title": "Chapter 8 — Pharos at Ridorana",
+      "desc": "Climbing the Pharos tower and overcoming its many trials."
+    },
+    {
+      "title": "Chapter 9 — The Great Crystal",
+      "desc": "Navigating the Great Crystal maze and preparing for the endgame."
+    },
+    {
+      "title": "Chapter 10 — Sky Fortress Bahamut",
+      "desc": "Final dungeon, story climax, and boss encounters."
+    },
+    {
+      "title": "Chapter 11 — Endgame Cleanup (Optional)",
+      "desc": "Optional hunts, Espers, and post-story preparation."
+    },
+    {
+      "title": "Chapter 12 — New Game+, Trials & Optimization",
+      "desc": "New Game+, Trial Mode, and long-term optimization strategies."
+    }
+  ]
+}
+
             }
           ]
         }
