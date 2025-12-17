@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FFI Walkthrough — Chapter 1: Cornelia & The First Steps</title>
+  <meta name="description" content="Final Fantasy I walkthrough — Cornelia, early gear, and the first dungeon setup." />
+
+  <style>
+    :root{
+      --bg:#0b1020;
+      --panel:#0f1730;
+      --panel2:#101a33;
+      --text:#eaf0ff;
+      --muted:#a9b6d6;
+      --line:rgba(255,255,255,.10);
+      --accent:#67b7ff;
+      --radius:16px;
+      --max: 980px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:var(--max); margin:0 auto; padding:18px}
+    header{
+      position:sticky;
+      top:0;
+      background:#0b1020dd;
+      backdrop-filter: blur(10px);
+      border-bottom:1px solid var(--line);
+      z-index:10;
+    }
+    .top{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+    .brand{display:flex; gap:10px; align-items:baseline;}
+    .brand h1{font-size:14px; margin:0; letter-spacing:.3px;}
+    .brand .muted{font-size:12px}
+    .muted{color:var(--muted)}
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:10px 12px;
+      border-radius:12px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.03);
+      color:var(--text);
+    }
+    .btn:hover{border-color:var(--accent); text-decoration:none}
+    main{padding:18px 0}
+    .card{
+      background:var(--panel);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:16px;
+      margin-bottom:14px;
+    }
+    .title{margin:0 0 6px; font-size:22px; line-height:1.2;}
+    .subtitle{margin:0; color:var(--muted)}
+    .meta{
+      display:flex; gap:10px; flex-wrap:wrap;
+      margin-top:12px; font-size:12px; color:var(--muted);
+    }
+    .tag{
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.03);
+      padding:4px 8px;
+      border-radius:999px;
+    }
+    .grid{display:grid; grid-template-columns: 1fr; gap:14px;}
+    @media (min-width: 900px){
+      .grid{grid-template-columns: 320px 1fr;}
+      .toc{position:sticky; top:74px; height:fit-content}
+    }
+    .toc h3{margin:0 0 10px; font-size:14px}
+    .toc a{display:block; padding:8px 10px; border-radius:10px; border:1px solid transparent}
+    .toc a:hover{border-color:var(--line); background:rgba(255,255,255,.03); text-decoration:none}
+    h2{margin:22px 0 10px; font-size:18px;}
+    h3{margin:18px 0 8px; font-size:15px;}
+    ul{margin:8px 0 0 18px}
+    li{margin:6px 0}
+    code{
+      background:rgba(255,255,255,.06);
+      border:1px solid var(--line);
+      padding:2px 6px;
+      border-radius:8px;
+      color:var(--text);
+    }
+    .callout{
+      border:1px dashed rgba(255,255,255,.22);
+      background:rgba(0,0,0,.10);
+      padding:12px;
+      border-radius:12px;
+      margin-top:12px;
+    }
+    .twoCol{display:grid; grid-template-columns: 1fr; gap:12px;}
+    @media (min-width: 760px){ .twoCol{grid-template-columns: 1fr 1fr;} }
+    .panel{
+      background:var(--panel2);
+      border:1px solid var(--line);
+      border-radius:12px;
+      padding:12px;
+    }
+    footer{
+      border-top:1px solid var(--line);
+      margin-top:18px;
+      padding:18px 0 28px;
+      color:var(--muted);
+      font-size:12px;
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <div class="wrap top">
+    <div class="brand">
+      <h1>Final Fantasy Compendium</h1>
+      <div class="muted">Walkthrough</div>
+    </div>
+
+    <div class="btnRow">
+      <a class="btn" href="/Final-Fantasy-Compendium/">← Back to Guides Hub</a>
+      <a class="btn" href="#" target="_blank" rel="noopener">▶ YouTube Playlist</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="card">
+    <h1 class="title">Final Fantasy I — Chapter 1: Cornelia & The First Steps</h1>
+    <p class="subtitle">Get your bearings in Cornelia, gear up smartly, and set up for the game’s first real dungeon.</p>
+
+    <div class="meta">
+      <span class="tag">Game: FFI</span>
+      <span class="tag">Chapter: 1</span>
+      <span class="tag">Estimated time: 20–45 min</span>
+      <span class="tag">Spoiler level: Low</span>
+    </div>
+
+    <div class="callout">
+      <strong>Version note:</strong> This guide is written to be broadly compatible across most FF1 releases. If you want, tell me which version you’re targeting (Pixel Remaster, NES, PSP, etc.) and I’ll tailor shop/gear specifics.
+    </div>
+  </section>
+
+  <div class="grid">
+    <aside class="card toc">
+      <h3>On this page</h3>
+      <a href="#goals">Goals</a>
+      <a href="#prep">Prep Checklist</a>
+      <a href="#steps">Step-by-step Walkthrough</a>
+      <a href="#loot">Loot & Missables</a>
+      <a href="#tips">Tips & Common Mistakes</a>
+      <a href="#next">Next Chapter</a>
+    </aside>
+
+    <article class="card">
+      <h2 id="goals">Goals</h2>
+      <ul>
+        <li>Learn the town loop (inn, shops, saving/resting).</li>
+        <li>Buy a solid set of early gear without wasting money.</li>
+        <li>Head out of Cornelia and reach the first “real” danger zone safely.</li>
+      </ul>
+
+      <h2 id="prep">Prep Checklist</h2>
+      <div class="twoCol">
+        <div class="panel">
+          <h3>Recommended</h3>
+          <ul>
+            <li>Rest at the <strong>Inn</strong> when low on HP/MP.</li>
+            <li>Buy a small stack of <strong>Potions</strong> (don’t overbuy).</li>
+            <li>Upgrade at least your <strong>frontliners’ weapons</strong> first.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Optional</h3>
+          <ul>
+            <li>Fight a few battles outside town if you’re struggling.</li>
+            <li>Save before leaving town after shopping.</li>
+            <li>Test your spell/attack rhythm to avoid wasted turns.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout">
+        <strong>Money tip:</strong> In FF1, early money feels tight. Prioritize a couple of meaningful upgrades over “a little bit of everything.”
+      </div>
+
+      <h2 id="steps">Step-by-step Walkthrough</h2>
+
+      <h3>1) Cornelia: Talk, shop, and stabilize</h3>
+      <ul>
+        <li>Walk around town and talk to NPCs to get directions and context.</li>
+        <li>Find the <strong>Inn</strong> and the <strong>shops</strong> (weapons/armor/items).</li>
+        <li>Buy a modest amount of healing items so you can survive bad luck in early fights.</li>
+      </ul>
+
+      <h3>2) Gear priorities (simple and effective)</h3>
+      <ul>
+        <li><strong>Weapons first</strong> for your main damage dealer(s) (usually your front line).</li>
+        <li><strong>Armor second</strong> if you’re taking too much damage per fight.</li>
+        <li>If you have a caster, don’t blow your whole budget trying to “max” magic early—gear keeps you alive.</li>
+      </ul>
+
+      <h3>3) Leave Cornelia and test your party</h3>
+      <ul>
+        <li>Head outside and do a few fights close to town.</li>
+        <li>Watch how much HP you lose per encounter and how fast you can finish fights.</li>
+        <li>If fights feel rough, return to town, rest, and consider one more key upgrade.</li>
+      </ul>
+
+      <h3>4) Push toward your first objective</h3>
+      <ul>
+        <li>Once your party can win consistently without burning all resources, continue onward.</li>
+        <li>Save when you can, and don’t be afraid to retreat to town to reset.</li>
+      </ul>
+
+      <h2 id="loot">Loot & Missables</h2>
+      <ul>
+        <li>Nothing “permanently missable” in this opening stretch for most versions, but early gold efficiency matters.</li>
+        <li>Rule of thumb: if you find yourself buying more healing than gear, you’re undergeared.</li>
+      </ul>
+
+      <h2 id="tips">Tips & Common Mistakes</h2>
+      <ul>
+        <li><strong>Don’t overbuy</strong> items early. Gear upgrades reduce how many items you need.</li>
+        <li><strong>Retreating is smart</strong> in FF1. Town is your reset button.</li>
+        <li>If battles are dragging, prioritize a weapon upgrade before grinding levels.</li>
+      </ul>
+
+      <h2 id="next">Next Chapter</h2>
+      <p class="muted">Next we’ll cover your first real dungeon push and the early “route” to stabilize leveling and supplies.</p>
+      <a class="btn" href="chapter-02.html">Next: Chapter 2 →</a>
+    </article>
+  </div>
+
+  <footer>
+    <div>© Final Fantasy Compendium — Walkthrough.</div>
+    <div class="muted">Template-based chapter page. Tell me your target FF1 version and I’ll lock in exact shop/gear recommendations.</div>
+  </footer>
+</main>
+
+</body>
+</html>
