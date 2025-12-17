@@ -1,59 +1,103 @@
 {
   "games": [
-"guides": [
-  {
-    "title": "Chapter 1 — Cornelia & The First Steps",
-    "desc": "Cornelia basics, smart early gear buys, and preparing for your first dungeon push.",
-    "url": "/Final-Fantasy-Compendium/walkthroughs/ffi/chapter-01.html"
-  },
-  {
-    "title": "Chapter 2 — The First Quest: Temple of Fiends",
-    "desc": "Your first real dungeon: route, enemies, and boss prep.",
-    "url": "/Final-Fantasy-Compendium/walkthroughs/ffi/chapter-02.html"
-  },
-  {
-    "title": "Chapter 3 — Pravoka & Your First Big Upgrade",
-    "desc": "New town loop, equipment upgrades, and your next travel goals.",
-    "url": "/Final-Fantasy-Compendium/walkthroughs/ffi/chapter-03.html"
-  },
-  {
-    "title": "Chapter 4 — The Western Keep: Marsh Cave",
-    "desc": "A difficulty spike: survival routing, resource management, and safe clears.",
-    "url": "/Final-Fantasy-Compendium/walkthroughs/ffi/chapter-04.html"
-  },
-  {
-    "title": "Chapter 5 — Melmond & The Earth Crisis",
-    "desc": "Progression reset, new tools, and getting ready for the next major dungeon.",
-    "url": "/Final-Fantasy-Compendium/walkthroughs/ffi/chapter-05.html"
-  },
-  {
-    "title": "Chapter 6 — Cavern of Earth",
-    "desc": "Dungeon routing, key pickups, and boss strategy.",
-    "url": "/Final-Fantasy-Compendium/walkthroughs/ffi/chapter-06.html"
-  },
-  {
-    "title": "Chapter 7 — Crescent Lake & Gurgu Volcano",
-    "desc": "Magic/gear milestones, then a long lava dungeon with major rewards.",
-    "url": "/Final-Fantasy-Compendium/walkthroughs/ffi/chapter-07.html"
-  },
-  {
-    "title": "Chapter 8 — The Sea & The Sunken Shrine",
-    "desc": "Ocean navigation, underwater dungeon routing, and power growth.",
-    "url": "/Final-Fantasy-Compendium/walkthroughs/ffi/chapter-08.html"
-  },
-  {
-    "title": "Chapter 9 — Mirage Tower & The Flying Fortress",
-    "desc": "Back-to-back endgame dungeons: safe routing, key items, and boss prep.",
-    "url": "/Final-Fantasy-Compendium/walkthroughs/ffi/chapter-09.html"
-  },
-  {
-    "title": "Chapter 10 — The Chaos Shrine (Finale)",
-    "desc": "Final dungeon route, boss gauntlet notes, and endgame wrap-up.",
-    "url": "/Final-Fantasy-Compendium/walkthroughs/ffi/chapter-10.html"
-  }
-]
-
+    {
+      "id": "FFI",
+      "label": "Final Fantasy I",
+      "chapters": [
+        {
+          "title": "Getting Started",
+          "desc": "Party setup basics, early tips, and beginner mistakes to avoid.",
+          "guides": []
+        },
+        {
+          "title": "Main Story Walkthrough",
+          "desc": "Chapter-by-chapter main story walkthrough (Pixel Remaster).",
+          "guides": [
+            {
+              "title": "Chapter 1 — Cornelia & The First Steps",
+              "desc": "Cornelia basics, smart early gear buys, and preparing for your first dungeon push.",
+              "url": "/Final-Fantasy-Compendium/walkthroughs/ffi/chapter-01.html"
+            },
+            {
+              "title": "Chapter 2 — The First Quest: Temple of Fiends",
+              "desc": "Your first real dungeon: route, enemies, and boss prep.",
+              "url": "/Final-Fantasy-Compendium/walkthroughs/ffi/chapter-02.html"
+            },
+            {
+              "title": "Chapter 3 — Pravoka & Your First Big Upgrade",
+              "desc": "New town, ship access, and major early power jump.",
+              "url": "/Final-Fantasy-Compendium/walkthroughs/ffi/chapter-03.html"
+            },
+            {
+              "title": "Chapter 4 — Marsh Cave",
+              "desc": "First major difficulty spike: poison enemies and survival routing.",
+              "url": "/Final-Fantasy-Compendium/walkthroughs/ffi/chapter-04.html"
+            },
+            {
+              "title": "Chapter 5 — Melmond & The Earth Crisis",
+              "desc": "Progression reset and preparation for the next elemental dungeon.",
+              "url": "/Final-Fantasy-Compendium/walkthroughs/ffi/chapter-05.html"
+            },
+            {
+              "title": "Chapter 6 — Cavern of Earth",
+              "desc": "Dungeon routing, key pickups, and boss strategy.",
+              "url": "/Final-Fantasy-Compendium/walkthroughs/ffi/chapter-06.html"
+            },
+            {
+              "title": "Chapter 7 — Crescent Lake & Gurgu Volcano",
+              "desc": "Spell upgrades, then a long lava dungeon with major rewards.",
+              "url": "/Final-Fantasy-Compendium/walkthroughs/ffi/chapter-07.html"
+            },
+            {
+              "title": "Chapter 8 — The Sea & The Sunken Shrine",
+              "desc": "Ocean navigation and underwater dungeon progression.",
+              "url": "/Final-Fantasy-Compendium/walkthroughs/ffi/chapter-08.html"
+            },
+            {
+              "title": "Chapter 9 — Mirage Tower & Flying Fortress",
+              "desc": "Late-game dungeons, routing, and power spikes.",
+              "url": "/Final-Fantasy-Compendium/walkthroughs/ffi/chapter-09.html"
+            },
+            {
+              "title": "Chapter 10 — Chaos Shrine (Finale)",
+              "desc": "Final dungeon, boss gauntlet, and ending wrap-up.",
+              "url": "/Final-Fantasy-Compendium/walkthroughs/ffi/chapter-10.html"
+            }
+          ]
+        },
+        {
+          "title": "Classes & Builds",
+          "desc": "Class choices, party roles, and strong team setups.",
+          "guides": []
+        },
+        {
+          "title": "Boss Guides",
+          "desc": "Boss strategies and preparation checklists.",
+          "guides": []
+        },
+        {
+          "title": "Side Quests & Optional Content",
+          "desc": "Optional areas, upgrades, and secrets.",
+          "guides": []
+        },
+        {
+          "title": "Endgame & Optimization",
+          "desc": "Endgame prep, best gear, and efficient leveling.",
+          "guides": []
+        },
+        {
+          "title": "Missables & Tips",
+          "desc": "Things to watch for, helpful shortcuts, and quality-of-life tips.",
+          "guides": []
+        },
+        {
+          "title": "Game-Specific: Spell Charges & Vancian Magic",
+          "desc": "How spell charges work, efficient spell usage, and planning your runs.",
+          "guides": []
+        }
+      ]
     },
+
     {
       "id": "FFII",
       "label": "Final Fantasy II",
@@ -68,6 +112,7 @@
         { "title": "Game-Specific: Stat Growth System", "desc": "How stats increase, efficient methods, and common misconceptions.", "guides": [] }
       ]
     },
+
     {
       "id": "FFIII",
       "label": "Final Fantasy III",
@@ -82,6 +127,7 @@
         { "title": "Game-Specific: Job Adjustment Phase", "desc": "How job switching penalties work and how to plan around them.", "guides": [] }
       ]
     },
+
     {
       "id": "FFIV",
       "label": "Final Fantasy IV",
@@ -93,9 +139,10 @@
         { "title": "Side Quests & Optional Content", "desc": "Optional areas, upgrades, and secrets.", "guides": [] },
         { "title": "Endgame & Optimization", "desc": "Endgame prep, best gear, and efficient leveling.", "guides": [] },
         { "title": "Missables & Tips", "desc": "Things to watch for, helpful shortcuts, and quality-of-life tips.", "guides": [] },
-        { "title": "Game-Specific: Augments / Version Notes", "desc": "Augment/ability changes by version and how they affect builds.", "guides": [] }
+        { "title": "Game-Specific: Version Notes", "desc": "Key differences between versions that affect progression and builds.", "guides": [] }
       ]
     },
+
     {
       "id": "FFV",
       "label": "Final Fantasy V",
@@ -110,6 +157,7 @@
         { "title": "Game-Specific: Ability Inheritance", "desc": "How abilities carry between jobs and the best early combos.", "guides": [] }
       ]
     },
+
     {
       "id": "FFVI",
       "label": "Final Fantasy VI",
@@ -124,6 +172,7 @@
         { "title": "Game-Specific: Espers & Magic Learning", "desc": "How Esper magic learning works and what to prioritize.", "guides": [] }
       ]
     },
+
     {
       "id": "FFVII",
       "label": "Final Fantasy VII",
@@ -138,6 +187,7 @@
         { "title": "Game-Specific: Limit Breaks", "desc": "How to unlock limit levels, best limits, and fast progression.", "guides": [] }
       ]
     },
+
     {
       "id": "FFVIII",
       "label": "Final Fantasy VIII",
@@ -152,6 +202,7 @@
         { "title": "Game-Specific: Junction System", "desc": "Junctions explained, fast power spikes, and what to prioritize.", "guides": [] }
       ]
     },
+
     {
       "id": "FFIX",
       "label": "Final Fantasy IX",
@@ -166,6 +217,7 @@
         { "title": "Game-Specific: Ability Learning", "desc": "How abilities are learned from gear and what to prioritize early.", "guides": [] }
       ]
     },
+
     {
       "id": "FFX",
       "label": "Final Fantasy X",
@@ -176,16 +228,17 @@
         { "title": "Boss Guides", "desc": "Boss strategies and preparation checklists.", "guides": [] },
         { "title": "Side Quests & Optional Content", "desc": "Celestial Weapons, Aeons, and major side content.", "guides": [] },
         { "title": "Endgame & Optimization", "desc": "Postgame prep, monster arena, and endgame builds.", "guides": [] },
-        { "title": "Missables & Tips", "desc": "Missables, Al Bhed primers, and helpful routing tips.", "guides": [] },
+        { "title": "Missables & Tips", "desc": "Missables, primers, and helpful routing tips.", "guides": [] },
         { "title": "Game-Specific: Sphere Grid", "desc": "Sphere Grid explained, standard vs expert, and key shortcuts.", "guides": [] }
       ]
     },
+
     {
       "id": "FFX-2",
       "label": "Final Fantasy X-2",
       "chapters": [
         { "title": "Getting Started", "desc": "Early tips, mission flow, and how completion works.", "guides": [] },
-        { "title": "Main Story Walkthrough", "desc": "Chapter-by-chapter story walkthrough (mission-based).", "guides": [] },
+        { "title": "Main Story Walkthrough", "desc": "Mission-based story walkthrough by chapter.", "guides": [] },
         { "title": "Party & Builds", "desc": "Dresspheres, roles, and fast power strategies.", "guides": [] },
         { "title": "Boss Guides", "desc": "Boss strategies and preparation checklists.", "guides": [] },
         { "title": "Side Quests & Optional Content", "desc": "Optional missions, secret content, and extras.", "guides": [] },
@@ -194,20 +247,22 @@
         { "title": "Game-Specific: 100% Completion Route", "desc": "How completion works and how to avoid missing percent.", "guides": [] }
       ]
     },
+
     {
       "id": "FFXI",
       "label": "Final Fantasy XI",
       "chapters": [
         { "title": "Getting Started", "desc": "Account setup, first jobs, UI basics, and early leveling.", "guides": [] },
-        { "title": "Main Story Walkthrough", "desc": "Story progression guides (missions) and unlock paths.", "guides": [] },
+        { "title": "Main Story Walkthrough", "desc": "Story progression (missions) and unlock paths.", "guides": [] },
         { "title": "Jobs & Builds", "desc": "Job basics, subjob unlocks, and role expectations.", "guides": [] },
-        { "title": "Boss Guides", "desc": "Notorious monsters, mission bosses, and fight prep.", "guides": [] },
+        { "title": "Boss Guides", "desc": "Mission bosses and fight preparation.", "guides": [] },
         { "title": "Side Content & Progression", "desc": "Systems, events, and side progression paths.", "guides": [] },
         { "title": "Endgame & Optimization", "desc": "Endgame paths, gearing, and efficiency tips.", "guides": [] },
         { "title": "Missables & Tips", "desc": "Quality-of-life tips, travel shortcuts, and common mistakes.", "guides": [] },
         { "title": "Game-Specific: PC Setup & Fixes", "desc": "Graphics, controllers, common errors, and stability fixes.", "guides": [] }
       ]
     },
+
     {
       "id": "FFXII",
       "label": "Final Fantasy XII",
@@ -218,12 +273,16 @@
           "guides": [
             {
               "title": "Best Job Combos (My Recommendations)",
-              "desc": "An in-depth explanation of strong job pairings in Final Fantasy XII, covering role balance, weapon synergy, and endgame scaling.",
+              "desc": "Why these job combos work and how they cover all roles.",
               "url": "https://youtu.be/Jh82gOmG0Dg"
             }
           ]
         },
-        { "title": "Getting Started", "desc": "Beginner tips, early routing, and party planning.", "guides": [] },
+        {
+          "title": "Getting Started",
+          "desc": "Beginner tips, early routing, and party planning.",
+          "guides": []
+        },
         {
           "title": "Main Story Walkthrough",
           "desc": "Step-by-step walkthrough of the Final Fantasy XII main story, organized by chapter.",
@@ -249,6 +308,7 @@
         { "title": "Game-Specific: Gambits", "desc": "Gambit setup basics, templates, and optimization.", "guides": [] }
       ]
     },
+
     {
       "id": "FFXIII",
       "label": "Final Fantasy XIII",
@@ -263,6 +323,7 @@
         { "title": "Game-Specific: Paradigms", "desc": "Paradigm setups, role synergy, and combat control.", "guides": [] }
       ]
     },
+
     {
       "id": "FFXIII-2",
       "label": "Final Fantasy XIII-2",
@@ -277,6 +338,7 @@
         { "title": "Game-Specific: Monster Recruiting", "desc": "Recruiting, growth, and best monster roles.", "guides": [] }
       ]
     },
+
     {
       "id": "LR",
       "label": "Lightning Returns: FFXIII",
@@ -291,20 +353,22 @@
         { "title": "Game-Specific: Time Management", "desc": "How to plan days, prioritize quests, and avoid time traps.", "guides": [] }
       ]
     },
+
     {
       "id": "FFXIV",
       "label": "Final Fantasy XIV",
       "chapters": [
         { "title": "Getting Started", "desc": "UI setup, early jobs, and beginner priorities.", "guides": [] },
         { "title": "Main Story Walkthrough", "desc": "MSQ progression, key unlocks, and milestone quests.", "guides": [] },
-        { "title": "Jobs & Builds", "desc": "Job basics, rotations (overview), and role expectations.", "guides": [] },
+        { "title": "Jobs & Builds", "desc": "Job basics and role expectations.", "guides": [] },
         { "title": "Boss Guides", "desc": "Dungeon/trial/raid boss tips and prep.", "guides": [] },
         { "title": "Side Content & Unlocks", "desc": "Blue quests, side content, and major systems.", "guides": [] },
         { "title": "Endgame & Optimization", "desc": "Gearing, endgame loops, and efficiency tips.", "guides": [] },
         { "title": "Missables & Tips", "desc": "Quality-of-life tips and common mistakes to avoid.", "guides": [] },
-        { "title": "Game-Specific: MSQ + Unlock Checklist", "desc": "What to unlock when, and what’s worth prioritizing.", "guides": [] }
+        { "title": "Game-Specific: Unlock Checklist", "desc": "What to unlock when, and what’s worth prioritizing.", "guides": [] }
       ]
     },
+
     {
       "id": "FFXV",
       "label": "Final Fantasy XV",
@@ -319,6 +383,7 @@
         { "title": "Game-Specific: Ascension", "desc": "Ascension grid priorities and strong early purchases.", "guides": [] }
       ]
     },
+
     {
       "id": "FFXVI",
       "label": "Final Fantasy XVI",
@@ -335,3 +400,4 @@
     }
   ]
 }
+
