@@ -1,242 +1,243 @@
-[
-  {
-    "id": "FFI",
-    "label": "Final Fantasy I",
-    "chapters": [
-      {
-        "title": "Main Story Walkthrough",
-        "desc": "Step-by-step walkthrough (Pixel Remaster).",
-        "guides": [
-          {
-            "title": "Chapter 1 — Cornelia (Story Start)",
-            "desc": "Step-by-step.",
-            "url": "walkthroughs/ffi/chapter-01.html"
-          },
-          {
-            "title": "Chapter 2 — Chaos Shrine / Temple of Fiends",
-            "desc": "Step-by-step.",
-            "url": "walkthroughs/ffi/chapter-02.html"
-          }
-        ]
-      }
-    ]
-  },
+{
+  "games": [
+    {
+      "id": "FFI",
+      "label": "Final Fantasy I",
+      "chapters": [
+        {
+          "title": "Main Story Walkthrough",
+          "desc": "Step-by-step walkthrough (Pixel Remaster).",
+          "guides": [
+            {
+              "title": "Chapter 1 — Cornelia (Story Start)",
+              "desc": "Step-by-step.",
+              "url": "walkthroughs/ffi/chapter-01.html"
+            },
+            {
+              "title": "Chapter 2 — Chaos Shrine / Temple of Fiends",
+              "desc": "Step-by-step.",
+              "url": "walkthroughs/ffi/chapter-02.html"
+            }
+          ]
+        }
+      ]
+    },
 
-  {
-    "id": "FFII",
-    "label": "Final Fantasy II",
-    "chapters": [
-      {
-        "title": "Main Story Walkthrough",
-        "desc": "Step-by-step walkthrough.",
-        "guides": []
-      }
-    ]
-  },
+    {
+      "id": "FFII",
+      "label": "Final Fantasy II",
+      "chapters": [
+        {
+          "title": "Main Story Walkthrough",
+          "desc": "Step-by-step walkthrough.",
+          "guides": []
+        }
+      ]
+    },
 
-  {
-    "id": "FFIII",
-    "label": "Final Fantasy III",
-    "chapters": [
-      {
-        "title": "Main Story Walkthrough",
-        "desc": "Step-by-step walkthrough.",
-        "guides": []
-      }
-    ]
-  },
+    {
+      "id": "FFIII",
+      "label": "Final Fantasy III",
+      "chapters": [
+        {
+          "title": "Main Story Walkthrough",
+          "desc": "Step-by-step walkthrough.",
+          "guides": []
+        }
+      ]
+    },
 
-  {
-    "id": "FFIV",
-    "label": "Final Fantasy IV",
-    "chapters": [
-      {
-        "title": "Main Story Walkthrough",
-        "desc": "Step-by-step walkthrough.",
-        "guides": []
-      }
-    ]
-  },
+    {
+      "id": "FFIV",
+      "label": "Final Fantasy IV",
+      "chapters": [
+        {
+          "title": "Main Story Walkthrough",
+          "desc": "Step-by-step walkthrough.",
+          "guides": []
+        }
+      ]
+    },
 
-  {
-    "id": "FFV",
-    "label": "Final Fantasy V",
-    "chapters": [
-      {
-        "title": "Main Story Walkthrough",
-        "desc": "Step-by-step walkthrough.",
-        "guides": []
-      }
-    ]
-  },
+    {
+      "id": "FFV",
+      "label": "Final Fantasy V",
+      "chapters": [
+        {
+          "title": "Main Story Walkthrough",
+          "desc": "Step-by-step walkthrough.",
+          "guides": []
+        }
+      ]
+    },
 
-  {
-    "id": "FFVI",
-    "label": "Final Fantasy VI",
-    "chapters": [
-      {
-        "title": "Main Story Walkthrough",
-        "desc": "Step-by-step walkthrough.",
-        "guides": []
-      }
-    ]
-  },
+    {
+      "id": "FFVI",
+      "label": "Final Fantasy VI",
+      "chapters": [
+        {
+          "title": "Main Story Walkthrough",
+          "desc": "Step-by-step walkthrough.",
+          "guides": []
+        }
+      ]
+    },
 
-  {
-    "id": "FFVII",
-    "label": "Final Fantasy VII",
-    "chapters": [
-      {
-        "title": "Main Story Walkthrough",
-        "desc": "Step-by-step walkthrough.",
-        "guides": []
-      }
-    ]
-  },
+    {
+      "id": "FFVII",
+      "label": "Final Fantasy VII",
+      "chapters": [
+        {
+          "title": "Main Story Walkthrough",
+          "desc": "Step-by-step walkthrough.",
+          "guides": []
+        }
+      ]
+    },
 
-  {
-    "id": "FFVIII",
-    "label": "Final Fantasy VIII",
-    "chapters": [
-      {
-        "title": "Main Story Walkthrough",
-        "desc": "Step-by-step walkthrough.",
-        "guides": []
-      }
-    ]
-  },
+    {
+      "id": "FFVIII",
+      "label": "Final Fantasy VIII",
+      "chapters": [
+        {
+          "title": "Main Story Walkthrough",
+          "desc": "Step-by-step walkthrough.",
+          "guides": []
+        }
+      ]
+    },
 
-  {
-    "id": "FFIX",
-    "label": "Final Fantasy IX",
-    "chapters": [
-      {
-        "title": "Main Story Walkthrough",
-        "desc": "Step-by-step walkthrough.",
-        "guides": []
-      }
-    ]
-  },
+    {
+      "id": "FFIX",
+      "label": "Final Fantasy IX",
+      "chapters": [
+        {
+          "title": "Main Story Walkthrough",
+          "desc": "Step-by-step walkthrough.",
+          "guides": []
+        }
+      ]
+    },
 
-  {
-    "id": "FFX",
-    "label": "Final Fantasy X",
-    "chapters": [
-      {
-        "title": "Main Story Walkthrough",
-        "desc": "Step-by-step walkthrough.",
-        "guides": []
-      }
-    ]
-  },
+    {
+      "id": "FFX",
+      "label": "Final Fantasy X",
+      "chapters": [
+        {
+          "title": "Main Story Walkthrough",
+          "desc": "Step-by-step walkthrough.",
+          "guides": []
+        }
+      ]
+    },
 
-  {
-    "id": "FFX-2",
-    "label": "Final Fantasy X-2",
-    "chapters": [
-      {
-        "title": "Main Story Walkthrough",
-        "desc": "Step-by-step walkthrough.",
-        "guides": []
-      }
-    ]
-  },
+    {
+      "id": "FFX-2",
+      "label": "Final Fantasy X-2",
+      "chapters": [
+        {
+          "title": "Main Story Walkthrough",
+          "desc": "Step-by-step walkthrough.",
+          "guides": []
+        }
+      ]
+    },
 
-  {
-    "id": "FFXI",
-    "label": "Final Fantasy XI",
-    "chapters": [
-      {
-        "title": "Main Story Walkthrough",
-        "desc": "Step-by-step walkthrough.",
-        "guides": []
-      }
-    ]
-  },
+    {
+      "id": "FFXI",
+      "label": "Final Fantasy XI",
+      "chapters": [
+        {
+          "title": "Main Story Walkthrough",
+          "desc": "Step-by-step walkthrough.",
+          "guides": []
+        }
+      ]
+    },
 
-  {
-    "id": "FFXII",
-    "label": "Final Fantasy XII",
-    "chapters": [
-      {
-        "title": "Main Story Walkthrough",
-        "desc": "Step-by-step walkthrough.",
-        "guides": []
-      }
-    ]
-  },
+    {
+      "id": "FFXII",
+      "label": "Final Fantasy XII",
+      "chapters": [
+        {
+          "title": "Main Story Walkthrough",
+          "desc": "Step-by-step walkthrough.",
+          "guides": []
+        }
+      ]
+    },
 
-  {
-    "id": "FFXIII",
-    "label": "Final Fantasy XIII",
-    "chapters": [
-      {
-        "title": "Main Story Walkthrough",
-        "desc": "Step-by-step walkthrough.",
-        "guides": []
-      }
-    ]
-  },
+    {
+      "id": "FFXIII",
+      "label": "Final Fantasy XIII",
+      "chapters": [
+        {
+          "title": "Main Story Walkthrough",
+          "desc": "Step-by-step walkthrough.",
+          "guides": []
+        }
+      ]
+    },
 
-  {
-    "id": "FFXIII-2",
-    "label": "Final Fantasy XIII-2",
-    "chapters": [
-      {
-        "title": "Main Story Walkthrough",
-        "desc": "Step-by-step walkthrough.",
-        "guides": []
-      }
-    ]
-  },
+    {
+      "id": "FFXIII-2",
+      "label": "Final Fantasy XIII-2",
+      "chapters": [
+        {
+          "title": "Main Story Walkthrough",
+          "desc": "Step-by-step walkthrough.",
+          "guides": []
+        }
+      ]
+    },
 
-  {
-    "id": "FFLR",
-    "label": "Lightning Returns: Final Fantasy XIII",
-    "chapters": [
-      {
-        "title": "Main Story Walkthrough",
-        "desc": "Step-by-step walkthrough.",
-        "guides": []
-      }
-    ]
-  },
+    {
+      "id": "FFLR",
+      "label": "Lightning Returns: Final Fantasy XIII",
+      "chapters": [
+        {
+          "title": "Main Story Walkthrough",
+          "desc": "Step-by-step walkthrough.",
+          "guides": []
+        }
+      ]
+    },
 
-  {
-    "id": "FFXIV",
-    "label": "Final Fantasy XIV",
-    "chapters": [
-      {
-        "title": "Main Story Walkthrough",
-        "desc": "Step-by-step walkthrough.",
-        "guides": []
-      }
-    ]
-  },
+    {
+      "id": "FFXIV",
+      "label": "Final Fantasy XIV",
+      "chapters": [
+        {
+          "title": "Main Story Walkthrough",
+          "desc": "Step-by-step walkthrough.",
+          "guides": []
+        }
+      ]
+    },
 
-  {
-    "id": "FFXV",
-    "label": "Final Fantasy XV",
-    "chapters": [
-      {
-        "title": "Main Story Walkthrough",
-        "desc": "Step-by-step walkthrough.",
-        "guides": []
-      }
-    ]
-  },
+    {
+      "id": "FFXV",
+      "label": "Final Fantasy XV",
+      "chapters": [
+        {
+          "title": "Main Story Walkthrough",
+          "desc": "Step-by-step walkthrough.",
+          "guides": []
+        }
+      ]
+    },
 
-  {
-    "id": "FFXVI",
-    "label": "Final Fantasy XVI",
-    "chapters": [
-      {
-        "title": "Main Story Walkthrough",
-        "desc": "Step-by-step walkthrough.",
-        "guides": []
-      }
-    ]
-  }
-]
-
+    {
+      "id": "FFXVI",
+      "label": "Final Fantasy XVI",
+      "chapters": [
+        {
+          "title": "Main Story Walkthrough",
+          "desc": "Step-by-step walkthrough.",
+          "guides": []
+        }
+      ]
+    }
+  ]
+}
 
