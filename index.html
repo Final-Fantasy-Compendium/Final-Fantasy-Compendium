@@ -18,9 +18,7 @@
       --radius: 16px;
       --max: 1200px;
     }
-
     *{box-sizing:border-box}
-
     body{
       margin:0;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
@@ -28,7 +26,6 @@
       background:var(--bg);
       min-height:100vh;
     }
-
     header{
       position:sticky;
       top:0;
@@ -37,26 +34,22 @@
       border-bottom:1px solid var(--line);
       z-index:10;
     }
-
     .wrap{max-width:var(--max); margin:0 auto; padding:16px}
-
     .top{
       display:flex;
       align-items:center;
       justify-content:space-between;
       gap:12px;
     }
-
     h1{font-size:16px; margin:0}
-    .muted{color:var(--muted); font-size:13px}
-
+    .muted{color:var(--muted); font-size:13px; line-height:1.4}
+    code{background: rgba(255,255,255,.06); padding:2px 6px; border-radius:8px; border:1px solid var(--line)}
     main{
       display:grid;
       grid-template-columns:260px 1fr;
       gap:16px;
       padding:16px;
     }
-
     aside{
       border:1px solid var(--line);
       border-radius:var(--radius);
@@ -65,7 +58,12 @@
       max-height:calc(100vh - 100px);
       overflow:auto;
     }
-
+    .sideTitle{
+      font-size:12px;
+      letter-spacing:.4px;
+      color:var(--muted);
+      margin:2px 6px 10px;
+    }
     .sideBtn{
       display:block;
       padding:10px 12px;
@@ -76,46 +74,52 @@
       text-decoration:none;
       font-size:14px;
     }
-
     .sideBtn:hover{border-color:var(--accent)}
     .sideBtn.active{background:#15204a}
-
     section{
       border:1px solid var(--line);
       border-radius:var(--radius);
       padding:16px;
       background:#0f1730;
+      min-width:0;
     }
-
     .chapter{
-      margin-bottom:16px;
+      margin-top:14px;
       padding:12px;
       border:1px solid var(--line);
       border-radius:12px;
+      background: rgba(255,255,255,.03);
     }
-
-    .chapter h3{margin:0 0 6px}
-    .chapter p{margin:0 0 8px; color:var(--muted)}
-
+    .chapter h3{margin:0 0 6px; font-size:16px}
+    .chapter p{margin:0 0 10px; color:var(--muted)}
     .guide{
       padding:10px;
       border:1px solid var(--line);
       border-radius:10px;
       margin-top:8px;
       background:#101a33;
+      display:flex;
+      flex-direction:column;
+      gap:4px;
     }
-
-    .guide a{color:var(--accent); text-decoration:none}
+    .guide a{color:var(--accent); text-decoration:none; font-weight:600}
+    .guide small{color:var(--muted)}
+    .hint{
+      margin-top:12px;
+      padding:12px;
+      border-radius:12px;
+      border:1px dashed rgba(255,255,255,.18);
+      background: rgba(0,0,0,.10);
+    }
 
     @media (max-width:900px){
       main{grid-template-columns:1fr}
-      aside{position:relative}
+      aside{max-height:none}
     }
   </style>
 </head>
 
 <body>
-
 <header>
   <div class="wrap top">
     <div>
@@ -126,76 +130,147 @@
 </header>
 
 <main class="wrap">
-  <aside id="nav"></aside>
+  <aside>
+    <div class="sideTitle">Games</div>
+    <div id="nav"></div>
+    <div class="muted" style="margin-top:10px; padding:0 6px;">
+      Click a game to view its chapters.
+    </div>
+  </aside>
+
   <section id="content">
-    <p class="muted">Select a Final Fantasy game from the left.</p>
+    <p class="muted">Loading…</p>
   </section>
 </main>
 
 <script>
-/*
-  TEMPORARY DATA
-  This will be replaced by content/games.json later.
-*/
-const GAMES = [
-  {
-    id:"FFXII",
-    label:"Final Fantasy XII",
-    chapters:[
-      {
-        title:"Jobs & Builds",
-        desc:"Recommended job pairings.",
-        guides:[
-          {
-            title:"Best Job Combos",
-            url:"#"
-          }
-        ]
-      }
-    ]
+  // ===== CONFIG =====
+  // Your GitHub Pages project URL is:
+  // https://YOURUSERNAME.github.io/Final-Fantasy-Compendium/
+  // So we fetch content from:
+  // /Final-Fantasy-Compendium/content/games.json
+  const REPO_BASE = "/Final-Fantasy-Compendium/";
+  const DATA_URL = REPO_BASE + "content/games.json";
+
+  let GAMES = [];
+
+  const nav = document.getElementById("nav");
+  const content = document.getElementById("content");
+
+  function esc(s){
+    return String(s ?? "").replace(/[&<>"]/g, c => ({
+      "&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"
+    }[c]));
   }
-];
 
-const nav = document.getElementById("nav");
-const content = document.getElementById("content");
+  function renderNav(activeId=null){
+    if(!Array.isArray(GAMES) || GAMES.length === 0){
+      nav.innerHTML = `<div class="muted">No games found.</div>`;
+      return;
+    }
+    nav.innerHTML = GAMES.map(g =>
+      `<a class="sideBtn ${g.id===activeId ? "active":""}" href="#${encodeURIComponent(g.id)}">${esc(g.label)}</a>`
+    ).join("");
+  }
 
-function renderNav(){
-  nav.innerHTML = GAMES.map(g =>
-    `<a class="sideBtn" href="#${g.id}">${g.label}</a>`
-  ).join("");
-}
-
-function renderGame(id){
-  const game = GAMES.find(g=>g.id===id);
-  if(!game) return;
-
-  document.querySelectorAll(".sideBtn").forEach(b=>{
-    b.classList.toggle("active", b.getAttribute("href")==="#"+id);
-  });
-
-  content.innerHTML = `
-    <h2>${game.label}</h2>
-    ${game.chapters.map(ch=>`
-      <div class="chapter">
-        <h3>${ch.title}</h3>
-        <p>${ch.desc}</p>
-        ${ch.guides.map(g=>`
-          <div class="guide">
-            <a href="${g.url}">${g.title}</a>
-          </div>
-        `).join("")}
+  function renderHome(){
+    renderNav(null);
+    content.innerHTML = `
+      <h2>Welcome</h2>
+      <p class="muted">
+        Select a Final Fantasy game from the left to view chapters and guides.
+      </p>
+      <div class="hint">
+        <div style="font-weight:700; margin-bottom:6px;">Where your content lives</div>
+        <div class="muted">
+          Edit <code>content/games.json</code> to add chapters and guides.
+        </div>
       </div>
-    `).join("")}
-  `;
-}
+    `;
+  }
 
-window.addEventListener("hashchange", ()=>{
-  renderGame(location.hash.replace("#",""));
-});
+  function renderGame(id){
+    const game = GAMES.find(g => g.id === id);
+    if(!game){
+      renderHome();
+      return;
+    }
 
-renderNav();
-if(location.hash) renderGame(location.hash.replace("#",""));
+    renderNav(game.id);
+
+    const chapters = Array.isArray(game.chapters) ? game.chapters : [];
+
+    content.innerHTML = `
+      <h2>${esc(game.label)}</h2>
+      ${
+        chapters.length === 0
+          ? `<p class="muted">No chapters yet. Add chapters in <code>content/games.json</code>.</p>`
+          : chapters.map(ch => {
+              const guides = Array.isArray(ch.guides) ? ch.guides : [];
+              return `
+                <div class="chapter">
+                  <h3>${esc(ch.title)}</h3>
+                  ${ch.desc ? `<p>${esc(ch.desc)}</p>` : ""}
+                  ${
+                    guides.length === 0
+                      ? `<div class="guide"><span class="muted">No guides in this chapter yet.</span></div>`
+                      : guides.map(g => `
+                          <div class="guide">
+                            <a href="${esc(g.url || "#")}" target="_blank" rel="noopener">${esc(g.title)}</a>
+                            ${g.desc ? `<small>${esc(g.desc)}</small>` : ""}
+                          </div>
+                        `).join("")
+                  }
+                </div>
+              `;
+            }).join("")
+      }
+    `;
+  }
+
+  function currentIdFromHash(){
+    return decodeURIComponent((location.hash || "").replace("#",""));
+  }
+
+  async function loadGames(){
+    const res = await fetch(DATA_URL, { cache: "no-store" });
+    if(!res.ok){
+      throw new Error(`Could not load ${DATA_URL} (HTTP ${res.status}).`);
+    }
+    const data = await res.json();
+    GAMES = Array.isArray(data.games) ? data.games : [];
+  }
+
+  function route(){
+    const id = currentIdFromHash();
+    if(id) renderGame(id);
+    else renderHome();
+  }
+
+  window.addEventListener("hashchange", route);
+
+  (async function init(){
+    try{
+      await loadGames();
+      route();
+    }catch(err){
+      console.error(err);
+      content.innerHTML = `
+        <h2>Content failed to load</h2>
+        <p class="muted">${esc(err.message)}</p>
+        <div class="hint">
+          <div style="font-weight:700; margin-bottom:6px;">Fix checklist</div>
+          <div class="muted">
+            1) Ensure <code>content/games.json</code> exists<br/>
+            2) Ensure it is valid JSON<br/>
+            3) Refresh in 1–2 minutes after committing changes
+          </div>
+        </div>
+      `;
+    }
+  })();
 </script>
 
 </body>
 </html>
+
