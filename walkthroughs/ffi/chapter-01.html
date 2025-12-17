@@ -6,37 +6,70 @@
 <title>Final Fantasy I (Pixel Remaster) — Chapter 1: Cornelia</title>
 
 <style>
-body{
-  margin:0;
-  font-family: system-ui, Arial, sans-serif;
-  background:#0b1020;
-  color:#eaf0ff;
-}
-main{
-  max-width:820px;
-  margin:auto;
-  padding:20px;
-}
-a{color:#67b7ff;text-decoration:none}
-h1{margin:10px 0 16px}
-h2{margin:20px 0 10px}
-.step{
-  background:#0f1730;
-  border-left:4px solid #67b7ff;
-  padding:12px 14px;
-  margin:10px 0;
-}
-.section{
-  background:#101a33;
-  border:1px solid rgba(255,255,255,.15);
-  padding:12px 14px;
-  margin:14px 0;
-}
-.footer{
-  margin-top:30px;
-  font-size:13px;
-  color:#a9b6d6;
-}
+  body{
+    margin:0;
+    font-family: system-ui, Arial, sans-serif;
+    background:#0b1020;
+    color:#eaf0ff;
+  }
+  main{
+    max-width:900px;
+    margin:auto;
+    padding:20px;
+  }
+  a{color:#67b7ff;text-decoration:none}
+  h1{margin:10px 0 12px}
+  h2{margin:18px 0 10px;font-size:18px}
+  .step{
+    background:#0f1730;
+    border-left:4px solid #67b7ff;
+    padding:12px 14px;
+    margin:10px 0;
+  }
+  .section{
+    background:#101a33;
+    border:1px solid rgba(255,255,255,.15);
+    padding:12px 14px;
+    margin:14px 0;
+  }
+  .img{
+    display:block;
+    max-width:100%;
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:10px;
+    margin:10px 0;
+  }
+  .row{
+    display:flex;
+    gap:10px;
+    align-items:center;
+    flex-wrap:wrap;
+  }
+  .icon{
+    width:22px;
+    height:22px;
+    vertical-align:middle;
+  }
+  .muted{color:#a9b6d6}
+  .footer{
+    margin-top:28px;
+    font-size:13px;
+    color:#a9b6d6;
+  }
+
+  /* Spoiler blur (for boss names in later chapters) */
+  .spoiler{
+    filter: blur(7px);
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.15);
+    padding: 2px 8px;
+    border-radius: 999px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .spoiler.revealed{
+    filter: none;
+  }
 </style>
 </head>
 
@@ -47,30 +80,41 @@ h2{margin:20px 0 10px}
 
 <h1>Final Fantasy I (Pixel Remaster) — Chapter 1: Cornelia (Story Start)</h1>
 
+<div class="section">
+  <div class="row">
+    <strong>Map</strong>
+    <span class="muted">(upload: assets/ffi/maps/cornelia-start.png)</span>
+  </div>
+  <img
+    class="img"
+    src="/Final-Fantasy-Compendium/assets/ffi/maps/cornelia-start.png"
+    alt="Cornelia / Castle Cornelia (Chapter 1) map"
+  >
+  <div class="muted">If the image is missing, confirm the file path and capitalization in your repo.</div>
+</div>
+
 <h2>Step-by-step</h2>
 
 <div class="step">1. Enter <strong>Castle Cornelia</strong>.</div>
 
 <div class="step">2. Go upstairs and speak to the guard to be brought to the King.</div>
 
-<div class="step">
-3. Speak to the King to receive the objective:
-<strong>Rescue Princess Sarah at the Chaos Shrine / Temple of Fiends.</strong>
-</div>
+<div class="step">3. Speak to the King to receive the objective: rescue Princess Sarah at the <strong>Chaos Shrine / Temple of Fiends</strong>.</div>
 
 <div class="step">4. Exit Castle Cornelia to the world map.</div>
 
-<div class="step">
-5. Walk north to the <strong>Chaos Shrine / Temple of Fiends</strong> entrance.
+<div class="step">5. Walk north to the <strong>Chaos Shrine / Temple of Fiends</strong> entrance.</div>
+
+<div class="section">
+  <div class="row">
+    <img class="icon" src="/Final-Fantasy-Compendium/assets/ui/chest.png" alt="Treasure chest">
+    <strong>Treasure / Extras checklist (Chapter 1)</strong>
+  </div>
+  <div>• Castle Cornelia chests are not obtainable yet (locked for later).</div>
 </div>
 
 <div class="section">
-<strong>Treasure / Extras checklist (Chapter 1)</strong><br>
-• Castle Cornelia chests are not obtainable yet (locked for later).
-</div>
-
-<div class="section">
-<a href="chapter-02.html">Continue to Chapter 2 →</a>
+  <a href="chapter-02.html">Continue to Chapter 2 →</a>
 </div>
 
 <div class="footer">
@@ -78,5 +122,16 @@ File: walkthroughs/ffi/chapter-01.html
 </div>
 
 </main>
+
+<script>
+  // Click to reveal spoiler text (used in later chapters)
+  document.addEventListener("click", (e) => {
+    const el = e.target.closest(".spoiler");
+    if (!el) return;
+    el.classList.toggle("revealed");
+  });
+</script>
+
 </body>
 </html>
+
