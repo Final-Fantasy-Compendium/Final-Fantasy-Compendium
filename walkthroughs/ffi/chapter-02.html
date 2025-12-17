@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FFI Walkthrough — Chapter 2: Temple of Fiends (Pixel Remaster)</title>
+  <meta name="description" content="Final Fantasy I Pixel Remaster walkthrough — Temple of Fiends route, enemies, and boss strategy." />
+
+  <style>
+    :root{
+      --bg:#0b1020;
+      --panel:#0f1730;
+      --panel2:#101a33;
+      --text:#eaf0ff;
+      --muted:#a9b6d6;
+      --line:rgba(255,255,255,.10);
+      --accent:#67b7ff;
+      --radius:16px;
+      --max: 980px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:var(--max); margin:0 auto; padding:18px}
+    header{
+      position:sticky;
+      top:0;
+      background:#0b1020dd;
+      backdrop-filter: blur(10px);
+      border-bottom:1px solid var(--line);
+      z-index:10;
+    }
+    .top{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+    .brand{display:flex; gap:10px; align-items:baseline;}
+    .brand h1{font-size:14px; margin:0;}
+    .brand .muted{font-size:12px}
+    .muted{color:var(--muted)}
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:10px 12px;
+      border-radius:12px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.03);
+      color:var(--text);
+    }
+    .btn:hover{border-color:var(--accent); text-decoration:none}
+    main{padding:18px 0}
+    .card{
+      background:var(--panel);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:16px;
+      margin-bottom:14px;
+    }
+    .title{margin:0 0 6px; font-size:22px;}
+    .subtitle{margin:0; color:var(--muted)}
+    .meta{
+      display:flex; gap:10px; flex-wrap:wrap;
+      margin-top:12px; font-size:12px; color:var(--muted);
+    }
+    .tag{
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.03);
+      padding:4px 8px;
+      border-radius:999px;
+    }
+    .grid{display:grid; grid-template-columns: 1fr; gap:14px;}
+    @media (min-width: 900px){
+      .grid{grid-template-columns: 320px 1fr;}
+      .toc{position:sticky; top:74px;}
+    }
+    .toc h3{margin:0 0 10px; font-size:14px}
+    .toc a{display:block; padding:8px 10px; border-radius:10px;}
+    .toc a:hover{background:rgba(255,255,255,.03); text-decoration:none}
+    h2{margin:22px 0 10px; font-size:18px;}
+    h3{margin:18px 0 8px; font-size:15px;}
+    ul{margin:8px 0 0 18px}
+    li{margin:6px 0}
+    code{
+      background:rgba(255,255,255,.06);
+      border:1px solid var(--line);
+      padding:2px 6px;
+      border-radius:8px;
+      color:var(--text);
+    }
+    .callout{
+      border:1px dashed rgba(255,255,255,.22);
+      background:rgba(0,0,0,.10);
+      padding:12px;
+      border-radius:12px;
+      margin-top:12px;
+    }
+    .twoCol{display:grid; grid-template-columns: 1fr; gap:12px;}
+    @media (min-width: 760px){ .twoCol{grid-template-columns: 1fr 1fr;} }
+    .panel{
+      background:var(--panel2);
+      border:1px solid var(--line);
+      border-radius:12px;
+      padding:12px;
+    }
+    footer{
+      border-top:1px solid var(--line);
+      margin-top:18px;
+      padding:18px 0 28px;
+      color:var(--muted);
+      font-size:12px;
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <div class="wrap top">
+    <div class="brand">
+      <h1>Final Fantasy Compendium</h1>
+      <div class="muted">Walkthrough</div>
+    </div>
+    <div class="btnRow">
+      <a class="btn" href="/Final-Fantasy-Compendium/">← Back to Guides Hub</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="card">
+    <h1 class="title">Final Fantasy I (Pixel Remaster) — Chapter 2: Temple of Fiends</h1>
+    <p class="subtitle">Your first dungeon: safe pacing, resource management, and boss prep.</p>
+
+    <div class="meta">
+      <span class="tag">Game: FFI (Pixel Remaster)</span>
+      <span class="tag">Chapter: 2</span>
+      <span class="tag">Estimated time: 30–60 min</span>
+      <span class="tag">Spoiler level: Low</span>
+    </div>
+
+    <div class="callout">
+      <strong>Chapter goal:</strong> Clear the Temple of Fiends and win the boss fight without over-grinding.
+    </div>
+  </section>
+
+  <div class="grid">
+    <aside class="card toc">
+      <h3>On this page</h3>
+      <a href="#goals">Goals</a>
+      <a href="#prep">Prep Checklist</a>
+      <a href="#route">Dungeon Route (Simple)</a>
+      <a href="#enemies">Enemy Tips</a>
+      <a href="#boss">Boss Strategy</a>
+      <a href="#loot">Loot & Notes</a>
+      <a href="#next">Next Chapter</a>
+    </aside>
+
+    <article class="card">
+      <h2 id="goals">Goals</h2>
+      <ul>
+        <li>Reach the boss with enough HP/items to recover from bad turns.</li>
+        <li>Learn “safe dungeon rhythm”: fight → top off → push forward → retreat if needed.</li>
+        <li>Beat the boss cleanly with focus fire and smart healing.</li>
+      </ul>
+
+      <h2 id="prep">Prep Checklist</h2>
+      <div class="twoCol">
+        <div class="panel">
+          <h3>Recommended before entering</h3>
+          <ul>
+            <li>Rest at the <strong>Inn</strong> so you start full.</li>
+            <li>Bring <strong>8–12 Potions</strong> total for the party.</li>
+            <li>Make sure at least 1–2 characters have upgraded weapons.</li>
+            <li>Save before you leave Cornelia.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>If you’re struggling</h3>
+          <ul>
+            <li>Fight a few battles near Cornelia to stabilize.</li>
+            <li>Buy 1 more key armor piece for the character getting hit most.</li>
+            <li>Enter again and aim for fewer wasted turns (focus fire).</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout">
+        <strong>Rule of thumb:</strong> If you’re forced to heal every single battle, you’re either undergeared or spreading damage too thin.
+      </div>
+
+      <h2 id="route">Dungeon Route (Simple)</h2>
+      <ul>
+        <li>The Temple is a straightforward “rooms + halls” layout.</li>
+        <li>Explore calmly and don’t push deeper if you’re already low on Potions.</li>
+        <li>If you find a room that feels like it’s draining you, back out and reset.</li>
+      </ul>
+
+      <h3>Save/Reset rhythm</h3>
+      <ul>
+        <li>After a rough fight: heal up, then decide if you should retreat.</li>
+        <li>Retreating is efficient. Town is your “refuel station.”</li>
+      </ul>
+
+      <h2 id="enemies">Enemy Tips</h2>
+      <ul>
+        <li><strong>Focus fire</strong>: take one enemy off the field quickly instead of spreading damage.</li>
+        <li>If you have multiple enemies hitting hard, prioritize the one that can finish a low-HP party member.</li>
+        <li>Don’t be afraid to use a Potion earlier than “you think you should” — early deaths waste more time than a Potion.</li>
+      </ul>
+
+      <h2 id="boss">Boss Strategy</h2>
+      <div class="panel">
+        <h3>Boss fight checklist</h3>
+        <ul>
+          <li><strong>Before entering:</strong> heal everyone to full.</li>
+          <li><strong>Turn plan:</strong> attack with your best hitters and keep HP safe.</li>
+          <li><strong>Healing:</strong> if someone drops low, heal immediately—don’t gamble.</li>
+          <li><strong>Win condition:</strong> consistent damage + no panic turns.</li>
+        </ul>
+      </div>
+
+      <div class="callout">
+        <strong>Common wipe cause:</strong> trying to “save” Potions and then losing a character. Heal earlier; you’ll finish faster and safer.
+      </div>
+
+      <h2 id="loot">Loot & Notes</h2>
+      <ul>
+        <li>No major “permanent missables” in this early section for Pixel Remaster.</li>
+        <li>Your real reward here is momentum: once this is done, progression speeds up.</li>
+      </ul>
+
+      <h2 id="next">Next Chapter</h2>
+      <p class="muted">Next: new town, better gear, and the early-world expansion begins.</p>
+      <a class="btn" href="chapter-03.html">Next: Chapter 3 →</a>
+    </article>
+  </div>
+
+  <footer>
+    <div>© Final Fantasy Compendium — FFI Pixel Remaster Walkthrough.</div>
+    <div class="muted">File: walkthroughs/ffi/chapter-02.html</div>
+  </footer>
+</main>
+
+</body>
+</html>
