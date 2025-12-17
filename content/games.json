@@ -1,18 +1,173 @@
 {
   "games": [
-    { "id": "FFI", "label": "Final Fantasy I", "chapters": [] },
-    { "id": "FFII", "label": "Final Fantasy II", "chapters": [] },
-    { "id": "FFIII", "label": "Final Fantasy III", "chapters": [] },
-    { "id": "FFIV", "label": "Final Fantasy IV", "chapters": [] },
-    { "id": "FFV", "label": "Final Fantasy V", "chapters": [] },
-    { "id": "FFVI", "label": "Final Fantasy VI", "chapters": [] },
-    { "id": "FFVII", "label": "Final Fantasy VII", "chapters": [] },
-    { "id": "FFVIII", "label": "Final Fantasy VIII", "chapters": [] },
-    { "id": "FFIX", "label": "Final Fantasy IX", "chapters": [] },
-    { "id": "FFX", "label": "Final Fantasy X", "chapters": [] },
-    { "id": "FFX-2", "label": "Final Fantasy X-2", "chapters": [] },
-    { "id": "FFXI", "label": "Final Fantasy XI", "chapters": [] },
-
+    {
+      "id": "FFI",
+      "label": "Final Fantasy I",
+      "chapters": [
+        { "title": "Getting Started", "desc": "Party setup basics, early tips, and beginner mistakes to avoid.", "guides": [] },
+        { "title": "Main Story Walkthrough", "desc": "Chapter-by-chapter main story walkthrough.", "guides": [] },
+        { "title": "Classes & Builds", "desc": "Class choices, party roles, and strong team setups.", "guides": [] },
+        { "title": "Boss Guides", "desc": "Boss strategies and preparation checklists.", "guides": [] },
+        { "title": "Side Quests & Optional Content", "desc": "Optional areas, upgrades, and secrets.", "guides": [] },
+        { "title": "Endgame & Optimization", "desc": "Endgame prep, best gear, and efficient leveling.", "guides": [] },
+        { "title": "Missables & Tips", "desc": "Things to watch for, helpful shortcuts, and quality-of-life tips.", "guides": [] },
+        { "title": "Game-Specific: Spell Charges & Vancian Magic", "desc": "How spell charges work, efficient spell usage, and planning your runs.", "guides": [] }
+      ]
+    },
+    {
+      "id": "FFII",
+      "label": "Final Fantasy II",
+      "chapters": [
+        { "title": "Getting Started", "desc": "Early routing, party setup, and key mechanics explained.", "guides": [] },
+        { "title": "Main Story Walkthrough", "desc": "Chapter-by-chapter main story walkthrough.", "guides": [] },
+        { "title": "Stats & Builds", "desc": "How growth works, smart training, and avoiding grind traps.", "guides": [] },
+        { "title": "Boss Guides", "desc": "Boss strategies and preparation checklists.", "guides": [] },
+        { "title": "Side Quests & Optional Content", "desc": "Optional areas, upgrades, and secrets.", "guides": [] },
+        { "title": "Endgame & Optimization", "desc": "Endgame prep, best gear, and efficient leveling.", "guides": [] },
+        { "title": "Missables & Tips", "desc": "Things to watch for, helpful shortcuts, and quality-of-life tips.", "guides": [] },
+        { "title": "Game-Specific: Stat Growth System", "desc": "How stats increase, efficient methods, and common misconceptions.", "guides": [] }
+      ]
+    },
+    {
+      "id": "FFIII",
+      "label": "Final Fantasy III",
+      "chapters": [
+        { "title": "Getting Started", "desc": "Early tips, first jobs, and smooth progression advice.", "guides": [] },
+        { "title": "Main Story Walkthrough", "desc": "Chapter-by-chapter main story walkthrough.", "guides": [] },
+        { "title": "Jobs & Builds", "desc": "Job choices, party roles, and strong job combinations.", "guides": [] },
+        { "title": "Boss Guides", "desc": "Boss strategies and preparation checklists.", "guides": [] },
+        { "title": "Side Quests & Optional Content", "desc": "Optional areas, upgrades, and secrets.", "guides": [] },
+        { "title": "Endgame & Optimization", "desc": "Endgame prep, best gear, and efficient leveling.", "guides": [] },
+        { "title": "Missables & Tips", "desc": "Things to watch for, helpful shortcuts, and quality-of-life tips.", "guides": [] },
+        { "title": "Game-Specific: Job Adjustment Phase", "desc": "How job switching penalties work and how to plan around them.", "guides": [] }
+      ]
+    },
+    {
+      "id": "FFIV",
+      "label": "Final Fantasy IV",
+      "chapters": [
+        { "title": "Getting Started", "desc": "Core mechanics, early routing, and party change expectations.", "guides": [] },
+        { "title": "Main Story Walkthrough", "desc": "Chapter-by-chapter main story walkthrough.", "guides": [] },
+        { "title": "Party & Builds", "desc": "Roles, gear priorities, and best practices for each phase.", "guides": [] },
+        { "title": "Boss Guides", "desc": "Boss strategies and preparation checklists.", "guides": [] },
+        { "title": "Side Quests & Optional Content", "desc": "Optional areas, upgrades, and secrets.", "guides": [] },
+        { "title": "Endgame & Optimization", "desc": "Endgame prep, best gear, and efficient leveling.", "guides": [] },
+        { "title": "Missables & Tips", "desc": "Things to watch for, helpful shortcuts, and quality-of-life tips.", "guides": [] },
+        { "title": "Game-Specific: Augments / Version Notes", "desc": "Augment/ability changes by version and how they affect builds.", "guides": [] }
+      ]
+    },
+    {
+      "id": "FFV",
+      "label": "Final Fantasy V",
+      "chapters": [
+        { "title": "Getting Started", "desc": "Early game tips and how to approach the job system.", "guides": [] },
+        { "title": "Main Story Walkthrough", "desc": "Chapter-by-chapter main story walkthrough.", "guides": [] },
+        { "title": "Jobs & Builds", "desc": "Job combos, ability mixing, and strong team setups.", "guides": [] },
+        { "title": "Boss Guides", "desc": "Boss strategies and preparation checklists.", "guides": [] },
+        { "title": "Side Quests & Optional Content", "desc": "Optional areas, upgrades, and secrets.", "guides": [] },
+        { "title": "Endgame & Optimization", "desc": "Endgame prep, best gear, and efficient leveling.", "guides": [] },
+        { "title": "Missables & Tips", "desc": "Things to watch for, helpful shortcuts, and quality-of-life tips.", "guides": [] },
+        { "title": "Game-Specific: Ability Inheritance", "desc": "How abilities carry between jobs and the best early combos.", "guides": [] }
+      ]
+    },
+    {
+      "id": "FFVI",
+      "label": "Final Fantasy VI",
+      "chapters": [
+        { "title": "Getting Started", "desc": "Early routing, party basics, and good habits for builds.", "guides": [] },
+        { "title": "Main Story Walkthrough", "desc": "Chapter-by-chapter main story walkthrough.", "guides": [] },
+        { "title": "Party & Builds", "desc": "Character roles, magic vs physical, and build planning.", "guides": [] },
+        { "title": "Boss Guides", "desc": "Boss strategies and preparation checklists.", "guides": [] },
+        { "title": "Side Quests & Optional Content", "desc": "Optional areas, character recruitment, and secrets.", "guides": [] },
+        { "title": "Endgame & Optimization", "desc": "Endgame prep, best gear, and efficient leveling.", "guides": [] },
+        { "title": "Missables & Tips", "desc": "Missables, key steals, and helpful routing tips.", "guides": [] },
+        { "title": "Game-Specific: Espers & Magic Learning", "desc": "How Esper magic learning works and what to prioritize.", "guides": [] }
+      ]
+    },
+    {
+      "id": "FFVII",
+      "label": "Final Fantasy VII",
+      "chapters": [
+        { "title": "Getting Started", "desc": "Core combat, early routing, and beginner tips.", "guides": [] },
+        { "title": "Main Story Walkthrough", "desc": "Chapter-by-chapter main story walkthrough.", "guides": [] },
+        { "title": "Materia & Builds", "desc": "Materia combos, roles, and efficient setup ideas.", "guides": [] },
+        { "title": "Boss Guides", "desc": "Boss strategies and preparation checklists.", "guides": [] },
+        { "title": "Side Quests & Optional Content", "desc": "Optional characters, weapons, and secrets.", "guides": [] },
+        { "title": "Endgame & Optimization", "desc": "Endgame prep, best gear, and efficient leveling.", "guides": [] },
+        { "title": "Missables & Tips", "desc": "Missables, key items, and routing tips.", "guides": [] },
+        { "title": "Game-Specific: Limit Breaks", "desc": "How to unlock limit levels, best limits, and fast progression.", "guides": [] }
+      ]
+    },
+    {
+      "id": "FFVIII",
+      "label": "Final Fantasy VIII",
+      "chapters": [
+        { "title": "Getting Started", "desc": "Early tips, SeeD basics, and how to avoid common pitfalls.", "guides": [] },
+        { "title": "Main Story Walkthrough", "desc": "Chapter-by-chapter main story walkthrough.", "guides": [] },
+        { "title": "Party & Builds", "desc": "Roles, weapon upgrades, and general build planning.", "guides": [] },
+        { "title": "Boss Guides", "desc": "Boss strategies and preparation checklists.", "guides": [] },
+        { "title": "Side Quests & Optional Content", "desc": "Optional content, GF acquisition, and secrets.", "guides": [] },
+        { "title": "Endgame & Optimization", "desc": "Endgame prep, best junctions, and efficient leveling.", "guides": [] },
+        { "title": "Missables & Tips", "desc": "Missables, card tips, and routing shortcuts.", "guides": [] },
+        { "title": "Game-Specific: Junction System", "desc": "Junctions explained, fast power spikes, and what to prioritize.", "guides": [] }
+      ]
+    },
+    {
+      "id": "FFIX",
+      "label": "Final Fantasy IX",
+      "chapters": [
+        { "title": "Getting Started", "desc": "Early tips, steals, and ability learning basics.", "guides": [] },
+        { "title": "Main Story Walkthrough", "desc": "Chapter-by-chapter main story walkthrough.", "guides": [] },
+        { "title": "Party & Builds", "desc": "Roles, ability planning, and gear priorities.", "guides": [] },
+        { "title": "Boss Guides", "desc": "Boss strategies and preparation checklists.", "guides": [] },
+        { "title": "Side Quests & Optional Content", "desc": "Optional content, side quests, and secrets.", "guides": [] },
+        { "title": "Endgame & Optimization", "desc": "Endgame prep, best gear, and optional bosses.", "guides": [] },
+        { "title": "Missables & Tips", "desc": "Missables, key steals, and time-sensitive content.", "guides": [] },
+        { "title": "Game-Specific: Ability Learning", "desc": "How abilities are learned from gear and what to prioritize early.", "guides": [] }
+      ]
+    },
+    {
+      "id": "FFX",
+      "label": "Final Fantasy X",
+      "chapters": [
+        { "title": "Getting Started", "desc": "Early tips, party roles, and how to think about the Sphere Grid.", "guides": [] },
+        { "title": "Main Story Walkthrough", "desc": "Chapter-by-chapter main story walkthrough.", "guides": [] },
+        { "title": "Party & Builds", "desc": "Roles, overdrives, and efficient character growth.", "guides": [] },
+        { "title": "Boss Guides", "desc": "Boss strategies and preparation checklists.", "guides": [] },
+        { "title": "Side Quests & Optional Content", "desc": "Celestial Weapons, Aeons, and major side content.", "guides": [] },
+        { "title": "Endgame & Optimization", "desc": "Postgame prep, monster arena, and endgame builds.", "guides": [] },
+        { "title": "Missables & Tips", "desc": "Missables, Al Bhed primers, and helpful routing tips.", "guides": [] },
+        { "title": "Game-Specific: Sphere Grid", "desc": "Sphere Grid explained, standard vs expert, and key shortcuts.", "guides": [] }
+      ]
+    },
+    {
+      "id": "FFX-2",
+      "label": "Final Fantasy X-2",
+      "chapters": [
+        { "title": "Getting Started", "desc": "Early tips, mission flow, and how completion works.", "guides": [] },
+        { "title": "Main Story Walkthrough", "desc": "Chapter-by-chapter story walkthrough (mission-based).", "guides": [] },
+        { "title": "Party & Builds", "desc": "Dresspheres, roles, and fast power strategies.", "guides": [] },
+        { "title": "Boss Guides", "desc": "Boss strategies and preparation checklists.", "guides": [] },
+        { "title": "Side Quests & Optional Content", "desc": "Optional missions, secret content, and extras.", "guides": [] },
+        { "title": "Endgame & Optimization", "desc": "Endgame prep and strong late-game dressphere setups.", "guides": [] },
+        { "title": "Missables & Tips", "desc": "Missables and completion tips.", "guides": [] },
+        { "title": "Game-Specific: 100% Completion Route", "desc": "How completion works and how to avoid missing percent.", "guides": [] }
+      ]
+    },
+    {
+      "id": "FFXI",
+      "label": "Final Fantasy XI",
+      "chapters": [
+        { "title": "Getting Started", "desc": "Account setup, first jobs, UI basics, and early leveling.", "guides": [] },
+        { "title": "Main Story Walkthrough", "desc": "Story progression guides (missions) and unlock paths.", "guides": [] },
+        { "title": "Jobs & Builds", "desc": "Job basics, subjob unlocks, and role expectations.", "guides": [] },
+        { "title": "Boss Guides", "desc": "Notorious monsters, mission bosses, and fight prep.", "guides": [] },
+        { "title": "Side Content & Progression", "desc": "Systems, events, and side progression paths.", "guides": [] },
+        { "title": "Endgame & Optimization", "desc": "Endgame paths, gearing, and efficiency tips.", "guides": [] },
+        { "title": "Missables & Tips", "desc": "Quality-of-life tips, travel shortcuts, and common mistakes.", "guides": [] },
+        { "title": "Game-Specific: PC Setup & Fixes", "desc": "Graphics, controllers, common errors, and stability fixes.", "guides": [] }
+      ]
+    },
     {
       "id": "FFXII",
       "label": "Final Fantasy XII",
@@ -28,68 +183,115 @@
             }
           ]
         },
+        { "title": "Getting Started", "desc": "Beginner tips, early routing, and party planning.", "guides": [] },
         {
           "title": "Main Story Walkthrough",
           "desc": "Step-by-step walkthrough of the Final Fantasy XII main story, organized by chapter.",
           "guides": [
-            {
-              "title": "Chapter 1 — Rabanastre & The Beginning",
-              "desc": "Opening prologue, Rabanastre exploration, and the palace escape."
-            },
-            {
-              "title": "Chapter 2 — The Dalmasca Estersand",
-              "desc": "Leaving Rabanastre, early overworld travel, and first hunts."
-            },
-            {
-              "title": "Chapter 3 — The Tomb of Raithwall",
-              "desc": "Garamsythe Waterway, the tomb, and the introduction of Espers."
-            },
-            {
-              "title": "Chapter 4 — Jahara & The Henne Mines",
-              "desc": "Journey to Jahara, party expansion, and the Henne Mines dungeon."
-            },
-            {
-              "title": "Chapter 5 — Mt. Bur-Omisace",
-              "desc": "Crossing the Paramina Rift and confronting political tension."
-            },
-            {
-              "title": "Chapter 6 — Archades & Draklor Laboratory",
-              "desc": "Infiltrating Archades and escaping the Draklor Laboratory."
-            },
-            {
-              "title": "Chapter 7 — The Feywood & Giruvegan",
-              "desc": "Navigating the Feywood and uncovering the secrets of Giruvegan."
-            },
-            {
-              "title": "Chapter 8 — Pharos at Ridorana",
-              "desc": "Climbing the Pharos tower and overcoming its trials."
-            },
-            {
-              "title": "Chapter 9 — The Great Crystal",
-              "desc": "Navigating the Great Crystal maze and preparing for the endgame."
-            },
-            {
-              "title": "Chapter 10 — Sky Fortress Bahamut",
-              "desc": "Final dungeon, story climax, and boss encounters."
-            },
-            {
-              "title": "Chapter 11 — Endgame Cleanup (Optional)",
-              "desc": "Optional hunts, Espers, and post-story preparation."
-            },
-            {
-              "title": "Chapter 12 — New Game+, Trials & Optimization",
-              "desc": "New Game+, Trial Mode, and long-term optimization strategies."
-            }
+            { "title": "Chapter 1 — Rabanastre & The Beginning", "desc": "Opening prologue, Rabanastre exploration, and the palace escape." },
+            { "title": "Chapter 2 — The Dalmasca Estersand", "desc": "Leaving Rabanastre, early overworld travel, and first hunts." },
+            { "title": "Chapter 3 — The Tomb of Raithwall", "desc": "Garamsythe Waterway, the tomb, and the introduction of Espers." },
+            { "title": "Chapter 4 — Jahara & The Henne Mines", "desc": "Journey to Jahara, party expansion, and the Henne Mines dungeon." },
+            { "title": "Chapter 5 — Mt. Bur-Omisace", "desc": "Crossing the Paramina Rift and confronting political tension." },
+            { "title": "Chapter 6 — Archades & Draklor Laboratory", "desc": "Infiltrating Archades and escaping the Draklor Laboratory." },
+            { "title": "Chapter 7 — The Feywood & Giruvegan", "desc": "Navigating the Feywood and uncovering the secrets of Giruvegan." },
+            { "title": "Chapter 8 — Pharos at Ridorana", "desc": "Climbing the Pharos tower and overcoming its trials." },
+            { "title": "Chapter 9 — The Great Crystal", "desc": "Navigating the Great Crystal maze and preparing for the endgame." },
+            { "title": "Chapter 10 — Sky Fortress Bahamut", "desc": "Final dungeon, story climax, and boss encounters." },
+            { "title": "Chapter 11 — Endgame Cleanup (Optional)", "desc": "Optional hunts, Espers, and post-story preparation." },
+            { "title": "Chapter 12 — New Game+, Trials & Optimization", "desc": "New Game+, Trial Mode, and long-term optimization strategies." }
           ]
-        }
+        },
+        { "title": "Boss Guides", "desc": "Boss strategies and preparation checklists.", "guides": [] },
+        { "title": "Side Quests & Optional Content", "desc": "Optional areas, hunts, Espers, and secrets.", "guides": [] },
+        { "title": "Endgame & Optimization", "desc": "Endgame prep, best gear, and efficient leveling.", "guides": [] },
+        { "title": "Missables & Tips", "desc": "Missables, key steals, and helpful routing tips.", "guides": [] },
+        { "title": "Game-Specific: Gambits", "desc": "Gambit setup basics, templates, and optimization.", "guides": [] }
       ]
     },
-
-    { "id": "FFXIII", "label": "Final Fantasy XIII", "chapters": [] },
-    { "id": "FFXIII-2", "label": "Final Fantasy XIII-2", "chapters": [] },
-    { "id": "LR", "label": "Lightning Returns: FFXIII", "chapters": [] },
-    { "id": "FFXIV", "label": "Final Fantasy XIV", "chapters": [] },
-    { "id": "FFXV", "label": "Final Fantasy XV", "chapters": [] },
-    { "id": "FFXVI", "label": "Final Fantasy XVI", "chapters": [] }
+    {
+      "id": "FFXIII",
+      "label": "Final Fantasy XIII",
+      "chapters": [
+        { "title": "Getting Started", "desc": "Early combat flow, roles, and upgrading basics.", "guides": [] },
+        { "title": "Main Story Walkthrough", "desc": "Chapter-by-chapter main story walkthrough.", "guides": [] },
+        { "title": "Party & Builds", "desc": "Roles, paradigms, and build progression.", "guides": [] },
+        { "title": "Boss Guides", "desc": "Boss strategies and preparation checklists.", "guides": [] },
+        { "title": "Side Quests & Optional Content", "desc": "Optional content, hunts, and extras.", "guides": [] },
+        { "title": "Endgame & Optimization", "desc": "Postgame builds, farming, and optimization.", "guides": [] },
+        { "title": "Missables & Tips", "desc": "Helpful tips, resources, and efficiency notes.", "guides": [] },
+        { "title": "Game-Specific: Paradigms", "desc": "Paradigm setups, role synergy, and combat control.", "guides": [] }
+      ]
+    },
+    {
+      "id": "FFXIII-2",
+      "label": "Final Fantasy XIII-2",
+      "chapters": [
+        { "title": "Getting Started", "desc": "Early tips, systems overview, and progression planning.", "guides": [] },
+        { "title": "Main Story Walkthrough", "desc": "Chapter-by-chapter main story walkthrough.", "guides": [] },
+        { "title": "Party & Builds", "desc": "Roles, monsters, and build planning.", "guides": [] },
+        { "title": "Boss Guides", "desc": "Boss strategies and preparation checklists.", "guides": [] },
+        { "title": "Side Quests & Optional Content", "desc": "Fragments, optional content, and secrets.", "guides": [] },
+        { "title": "Endgame & Optimization", "desc": "Endgame builds, farming, and optimization.", "guides": [] },
+        { "title": "Missables & Tips", "desc": "Missables, efficiency tips, and resource planning.", "guides": [] },
+        { "title": "Game-Specific: Monster Recruiting", "desc": "Recruiting, growth, and best monster roles.", "guides": [] }
+      ]
+    },
+    {
+      "id": "LR",
+      "label": "Lightning Returns: FFXIII",
+      "chapters": [
+        { "title": "Getting Started", "desc": "Time system overview, early routes, and key priorities.", "guides": [] },
+        { "title": "Main Story Walkthrough", "desc": "Main story walkthrough and efficient routing.", "guides": [] },
+        { "title": "Builds & Gear", "desc": "Garbs, schemata, and build planning.", "guides": [] },
+        { "title": "Boss Guides", "desc": "Boss strategies and preparation checklists.", "guides": [] },
+        { "title": "Side Quests & Optional Content", "desc": "Side quests, optional content, and secrets.", "guides": [] },
+        { "title": "Endgame & Optimization", "desc": "Endgame routes, farming, and optimization.", "guides": [] },
+        { "title": "Missables & Tips", "desc": "Time-saving tips and missables.", "guides": [] },
+        { "title": "Game-Specific: Time Management", "desc": "How to plan days, prioritize quests, and avoid time traps.", "guides": [] }
+      ]
+    },
+    {
+      "id": "FFXIV",
+      "label": "Final Fantasy XIV",
+      "chapters": [
+        { "title": "Getting Started", "desc": "UI setup, early jobs, and beginner priorities.", "guides": [] },
+        { "title": "Main Story Walkthrough", "desc": "MSQ progression, key unlocks, and milestone quests.", "guides": [] },
+        { "title": "Jobs & Builds", "desc": "Job basics, rotations (overview), and role expectations.", "guides": [] },
+        { "title": "Boss Guides", "desc": "Dungeon/trial/raid boss tips and prep.", "guides": [] },
+        { "title": "Side Content & Unlocks", "desc": "Blue quests, side content, and major systems.", "guides": [] },
+        { "title": "Endgame & Optimization", "desc": "Gearing, endgame loops, and efficiency tips.", "guides": [] },
+        { "title": "Missables & Tips", "desc": "Quality-of-life tips and common mistakes to avoid.", "guides": [] },
+        { "title": "Game-Specific: MSQ + Unlock Checklist", "desc": "What to unlock when, and what’s worth prioritizing.", "guides": [] }
+      ]
+    },
+    {
+      "id": "FFXV",
+      "label": "Final Fantasy XV",
+      "chapters": [
+        { "title": "Getting Started", "desc": "Early exploration tips, combat basics, and party roles.", "guides": [] },
+        { "title": "Main Story Walkthrough", "desc": "Chapter-by-chapter main story walkthrough.", "guides": [] },
+        { "title": "Party & Builds", "desc": "Weapons, ascension, and effective setups.", "guides": [] },
+        { "title": "Boss Guides", "desc": "Boss strategies and preparation checklists.", "guides": [] },
+        { "title": "Side Quests & Optional Content", "desc": "Side quests, dungeons, and extras.", "guides": [] },
+        { "title": "Endgame & Optimization", "desc": "Endgame prep, farming, and optimization.", "guides": [] },
+        { "title": "Missables & Tips", "desc": "Missables, helpful routes, and efficiency tips.", "guides": [] },
+        { "title": "Game-Specific: Ascension", "desc": "Ascension grid priorities and strong early purchases.", "guides": [] }
+      ]
+    },
+    {
+      "id": "FFXVI",
+      "label": "Final Fantasy XVI",
+      "chapters": [
+        { "title": "Getting Started", "desc": "Combat basics, early upgrades, and build mindset.", "guides": [] },
+        { "title": "Main Story Walkthrough", "desc": "Chapter-by-chapter main story walkthrough.", "guides": [] },
+        { "title": "Builds & Abilities", "desc": "Ability choices, loadouts, and build planning.", "guides": [] },
+        { "title": "Boss Guides", "desc": "Boss strategies and preparation checklists.", "guides": [] },
+        { "title": "Side Quests & Optional Content", "desc": "Side quests, hunts, and optional rewards.", "guides": [] },
+        { "title": "Endgame & Optimization", "desc": "Endgame prep and performance optimization.", "guides": [] },
+        { "title": "Missables & Tips", "desc": "Missables and helpful quality-of-life tips.", "guides": [] },
+        { "title": "Game-Specific: Eikon Loadouts", "desc": "Eikon ability synergy and recommended loadouts.", "guides": [] }
+      ]
+    }
   ]
 }
