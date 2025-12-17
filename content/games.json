@@ -12,20 +12,24 @@
     { "id": "FFX", "label": "Final Fantasy X", "chapters": [] },
     { "id": "FFX-2", "label": "Final Fantasy X-2", "chapters": [] },
     { "id": "FFXI", "label": "Final Fantasy XI", "chapters": [] },
-    { "id": "FFXII", "label": "Final Fantasy XII", "chapters": ["chapters": [
-  {
-    "title": "Jobs & Builds",
-    "desc": "Recommended job pairings, roles, and weapon coverage.",
-    "guides": [
-      {
-        "title": "Best Job Combos (My Recommendations)",
-        "desc": "Why these job combos work and how they cover all roles.",
-        "url": "https://youtube.com/yourvideo"
-      }
+    { 
+  "id": "FFXII",
+  "label": "Final Fantasy XII",
+  "chapters": [
+    {
+      "title": "Jobs & Builds",
+      "desc": "Recommended job pairings, roles, and weapon coverage.",
+      "guides": [
+        {
+          "title": "Best Job Combos (My Recommendations)",
+          "desc": "Why these job combos work and how they cover all roles.",
+          "url": "https://youtube.com/yourvideo"
+        }
+      ]
+    }
     ]
-  }
-]
-] },
+    },
+    },
     { "id": "FFXIII", "label": "Final Fantasy XIII", "chapters": [] },
     { "id": "FFXIII-2", "label": "Final Fantasy XIII-2", "chapters": [] },
     { "id": "LR", "label": "Lightning Returns: FFXIII", "chapters": [] },
