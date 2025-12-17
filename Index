@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Final Fantasy Compendium — Guides</title>
+  <meta name="description" content="Final Fantasy guides organized by game and chapter." />
+
+  <style>
+    :root{
+      --bg:#0b1020;
+      --panel:#101a33;
+      --text:#eaf0ff;
+      --muted:#a9b6d6;
+      --line:rgba(255,255,255,.10);
+      --accent:#67b7ff;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 16px;
+      --max: 1200px;
+    }
+
+    *{box-sizing:border-box}
+
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      color:var(--text);
+      background:var(--bg);
+      min-height:100vh;
+    }
+
+    header{
+      position:sticky;
+      top:0;
+      background:#0b1020dd;
+      backdrop-filter: blur(10px);
+      border-bottom:1px solid var(--line);
+      z-index:10;
+    }
+
+    .wrap{max-width:var(--max); margin:0 auto; padding:16px}
+
+    .top{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
+
+    h1{font-size:16px; margin:0}
+    .muted{color:var(--muted); font-size:13px}
+
+    main{
+      display:grid;
+      grid-template-columns:260px 1fr;
+      gap:16px;
+      padding:16px;
+    }
+
+    aside{
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:12px;
+      background:#0f1730;
+      max-height:calc(100vh - 100px);
+      overflow:auto;
+    }
+
+    .sideBtn{
+      display:block;
+      padding:10px 12px;
+      border-radius:12px;
+      border:1px solid var(--line);
+      margin-bottom:8px;
+      color:var(--text);
+      text-decoration:none;
+      font-size:14px;
+    }
+
+    .sideBtn:hover{border-color:var(--accent)}
+    .sideBtn.active{background:#15204a}
+
+    section{
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:16px;
+      background:#0f1730;
+    }
+
+    .chapter{
+      margin-bottom:16px;
+      padding:12px;
+      border:1px solid var(--line);
+      border-radius:12px;
+    }
+
+    .chapter h3{margin:0 0 6px}
+    .chapter p{margin:0 0 8px; color:var(--muted)}
+
+    .guide{
+      padding:10px;
+      border:1px solid var(--line);
+      border-radius:10px;
+      margin-top:8px;
+      background:#101a33;
+    }
+
+    .guide a{color:var(--accent); text-decoration:none}
+
+    @media (max-width:900px){
+      main{grid-template-columns:1fr}
+      aside{position:relative}
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="wrap top">
+    <div>
+      <h1>Final Fantasy Compendium</h1>
+      <div class="muted">Guides • Chapters • Walkthroughs</div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <aside id="nav"></aside>
+  <section id="content">
+    <p class="muted">Select a Final Fantasy game from the left.</p>
+  </section>
+</main>
+
+<script>
+/*
+  TEMPORARY DATA
+  This will be replaced by content/games.json later.
+*/
+const GAMES = [
+  {
+    id:"FFXII",
+    label:"Final Fantasy XII",
+    chapters:[
+      {
+        title:"Jobs & Builds",
+        desc:"Recommended job pairings.",
+        guides:[
+          {
+            title:"Best Job Combos",
+            url:"#"
+          }
+        ]
+      }
+    ]
+  }
+];
+
+const nav = document.getElementById("nav");
+const content = document.getElementById("content");
+
+function renderNav(){
+  nav.innerHTML = GAMES.map(g =>
+    `<a class="sideBtn" href="#${g.id}">${g.label}</a>`
+  ).join("");
+}
+
+function renderGame(id){
+  const game = GAMES.find(g=>g.id===id);
+  if(!game) return;
+
+  document.querySelectorAll(".sideBtn").forEach(b=>{
+    b.classList.toggle("active", b.getAttribute("href")==="#"+id);
+  });
+
+  content.innerHTML = `
+    <h2>${game.label}</h2>
+    ${game.chapters.map(ch=>`
+      <div class="chapter">
+        <h3>${ch.title}</h3>
+        <p>${ch.desc}</p>
+        ${ch.guides.map(g=>`
+          <div class="guide">
+            <a href="${g.url}">${g.title}</a>
+          </div>
+        `).join("")}
+      </div>
+    `).join("")}
+  `;
+}
+
+window.addEventListener("hashchange", ()=>{
+  renderGame(location.hash.replace("#",""));
+});
+
+renderNav();
+if(location.hash) renderGame(location.hash.replace("#",""));
+</script>
+
+</body>
+</html>
