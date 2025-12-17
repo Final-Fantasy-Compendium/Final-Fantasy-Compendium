@@ -1,0 +1,99 @@
+{
+  "games": [
+    {
+      "id": "FFI",
+      "label": "Final Fantasy I",
+      "chapters": []
+    },
+    {
+      "id": "FFII",
+      "label": "Final Fantasy II",
+      "chapters": []
+    },
+    {
+      "id": "FFIII",
+      "label": "Final Fantasy III",
+      "chapters": []
+    },
+    {
+      "id": "FFIV",
+      "label": "Final Fantasy IV",
+      "chapters": []
+    },
+    {
+      "id": "FFV",
+      "label": "Final Fantasy V",
+      "chapters": []
+    },
+    {
+      "id": "FFVI",
+      "label": "Final Fantasy VI",
+      "chapters": []
+    },
+    {
+      "id": "FFVII",
+      "label": "Final Fantasy VII",
+      "chapters": []
+    },
+    {
+      "id": "FFVIII",
+      "label": "Final Fantasy VIII",
+      "chapters": []
+    },
+    {
+      "id": "FFIX",
+      "label": "Final Fantasy IX",
+      "chapters": []
+    },
+    {
+      "id": "FFX",
+      "label": "Final Fantasy X",
+      "chapters": []
+    },
+    {
+      "id": "FFX-2",
+      "label": "Final Fantasy X-2",
+      "chapters": []
+    },
+    {
+      "id": "FFXI",
+      "label": "Final Fantasy XI",
+      "chapters": []
+    },
+    {
+      "id": "FFXII",
+      "label": "Final Fantasy XII",
+      "chapters": []
+    },
+    {
+      "id": "FFXIII",
+      "label": "Final Fantasy XIII",
+      "chapters": []
+    },
+    {
+      "id": "FFXIII-2",
+      "label": "Final Fantasy XIII-2",
+      "chapters": []
+    },
+    {
+      "id": "LR",
+      "label": "Lightning Returns: FFXIII",
+      "chapters": []
+    },
+    {
+      "id": "FFXIV",
+      "label": "Final Fantasy XIV",
+      "chapters": []
+    },
+    {
+      "id": "FFXV",
+      "label": "Final Fantasy XV",
+      "chapters": []
+    },
+    {
+      "id": "FFXVI",
+      "label": "Final Fantasy XVI",
+      "chapters": []
+    }
+  ]
+}
