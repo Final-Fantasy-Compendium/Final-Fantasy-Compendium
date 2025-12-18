@@ -83,17 +83,25 @@
       ]
     },
 
+{
+  "id": "FFVII",
+  "label": "Final Fantasy VII (Original)",
+  "chapters": [
     {
-      "id": "FFVII",
-      "label": "Final Fantasy VII",
-      "chapters": [
-        {
-          "title": "Main Story Walkthrough",
-          "desc": "Step-by-step walkthrough.",
-          "guides": []
-        }
+      "title": "Main Story Walkthrough",
+      "desc": "Step-by-step 100% guide (missables called out separately).",
+      "guides": [
+        { "title": "Chapter 1 — Reactor 1 Bombing", "desc": "Step-by-step + missables.", "url": "walkthroughs/ff7/chapter-01.html" },
+        { "title": "Chapter 2 — Sector 7 Slums & Avalanche Base", "desc": "Step-by-step + missables.", "url": "walkthroughs/ff7/chapter-02.html" },
+        { "title": "Chapter 3 — Reactor 5 Mission", "desc": "Placeholder.", "url": "walkthroughs/ff7/chapter-03.html" },
+        { "title": "Chapter 4 — Sector 7 Plate Fall", "desc": "Placeholder.", "url": "walkthroughs/ff7/chapter-04.html" },
+        { "title": "Chapter 5 — Wall Market", "desc": "Placeholder.", "url": "walkthroughs/ff7/chapter-05.html" },
+        { "title": "Chapter 6 — Shinra HQ", "desc": "Placeholder.", "url": "walkthroughs/ff7/chapter-06.html" }
       ]
-    },
+    }
+  ]
+}
+
 
     {
       "id": "FFVIII",
