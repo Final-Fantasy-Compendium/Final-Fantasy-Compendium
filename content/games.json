@@ -83,26 +83,52 @@
       ]
     },
 
-{
-  "id": "FFVII",
-  "label": "Final Fantasy VII (Original)",
-  "chapters": [
     {
-      "title": "Main Story Walkthrough",
-      "desc": "Step-by-step 100% guide (missables called out separately).",
-      "guides": [
-        { "title": "Chapter 1 — Reactor 1 Bombing", "desc": "Step-by-step + missables.", "url": "walkthroughs/ff7/chapter-01.html" },
-        { "title": "Chapter 2 — Sector 7 Slums & Avalanche Base", "desc": "Step-by-step + missables.", "url": "walkthroughs/ff7/chapter-02.html" },
-        { "title": "Chapter 3 — Reactor 5 Mission", "desc": "Placeholder.", "url": "walkthroughs/ff7/chapter-03.html" },
-        { "title": "Chapter 4 — Sector 7 Plate Fall", "desc": "Placeholder.", "url": "walkthroughs/ff7/chapter-04.html" },
-        { "title": "Chapter 5 — Wall Market", "desc": "Placeholder.", "url": "walkthroughs/ff7/chapter-05.html" },
-        { "title": "Chapter 6 — Shinra HQ", "desc": "Placeholder.", "url": "walkthroughs/ff7/chapter-06.html" }
+      "id": "FFVII",
+      "label": "Final Fantasy VII (Original)",
+      "chapters": [
+        {
+          "title": "Main Story Walkthrough (100%)",
+          "desc": "Step-by-step progression with separate optional/missable callouts.",
+          "guides": [
+            { "title": "Chapter 1 — Reactor 1 Bombing Mission", "desc": "Step-by-step + optional/missable callouts.", "url": "walkthroughs/ffvii/chapter-01.html" },
+            { "title": "Chapter 2 — Sector 7 Slums & Avalanche Base", "desc": "Step-by-step + optional/missable callouts.", "url": "walkthroughs/ffvii/chapter-02.html" },
+            { "title": "Chapter 3 — Reactor 5 & Aftermath", "desc": "Step-by-step + optional/missable callouts.", "url": "walkthroughs/ffvii/chapter-03.html" },
+            { "title": "Chapter 4 — Train Graveyard & Plate Events", "desc": "Step-by-step + optional/missable callouts.", "url": "walkthroughs/ffvii/chapter-04.html" },
+            { "title": "Chapter 5 — Wall Market & Don Corneo", "desc": "Step-by-step + optional/missable callouts.", "url": "walkthroughs/ffvii/chapter-05.html" },
+            { "title": "Chapter 6 — Sewers & Train Graveyard Return", "desc": "Step-by-step + optional/missable callouts.", "url": "walkthroughs/ffvii/chapter-06.html" },
+            { "title": "Chapter 7 — Shinra HQ Infiltration", "desc": "Step-by-step + optional/missable callouts.", "url": "walkthroughs/ffvii/chapter-07.html" },
+            { "title": "Chapter 8 — Escape from Midgar", "desc": "Step-by-step + optional/missable callouts.", "url": "walkthroughs/ffvii/chapter-08.html" },
+
+            { "title": "Chapter 9 — Kalm & Nibelheim Flashback", "desc": "Step-by-step + optional/missable callouts.", "url": "walkthroughs/ffvii/chapter-09.html" },
+            { "title": "Chapter 10 — Grasslands & Chocobo Ranch", "desc": "Step-by-step + optional/missable callouts.", "url": "walkthroughs/ffvii/chapter-10.html" },
+            { "title": "Chapter 11 — Mythril Mine & Fort Condor (1st Visit)", "desc": "Step-by-step + optional/missable callouts.", "url": "walkthroughs/ffvii/chapter-11.html" },
+            { "title": "Chapter 12 — Junon (Lower & Upper) + Parade", "desc": "Step-by-step + optional/missable callouts.", "url": "walkthroughs/ffvii/chapter-12.html" },
+            { "title": "Chapter 13 — Cargo Ship & Costa del Sol", "desc": "Step-by-step + optional/missable callouts.", "url": "walkthroughs/ffvii/chapter-13.html" },
+            { "title": "Chapter 14 — Corel Region & Gold Saucer", "desc": "Step-by-step + optional/missable callouts.", "url": "walkthroughs/ffvii/chapter-14.html" },
+            { "title": "Chapter 15 — Corel Prison & Desert Escape", "desc": "Step-by-step + optional/missable callouts.", "url": "walkthroughs/ffvii/chapter-15.html" },
+            { "title": "Chapter 16 — Gongaga & Cosmo Canyon", "desc": "Step-by-step + optional/missable callouts.", "url": "walkthroughs/ffvii/chapter-16.html" },
+            { "title": "Chapter 17 — Nibelheim Return & Shinra Mansion", "desc": "Step-by-step + optional/missable callouts.", "url": "walkthroughs/ffvii/chapter-17.html" },
+            { "title": "Chapter 18 — Mt. Nibel & Rocket Town", "desc": "Step-by-step + optional/missable callouts.", "url": "walkthroughs/ffvii/chapter-18.html" },
+
+            { "title": "Chapter 19 — Gold Saucer Revisit (Date Setup)", "desc": "Step-by-step + optional/missable callouts.", "url": "walkthroughs/ffvii/chapter-19.html" },
+            { "title": "Chapter 20 — Temple of the Ancients", "desc": "Step-by-step + optional/missable callouts.", "url": "walkthroughs/ffvii/chapter-20.html" },
+            { "title": "Chapter 21 — Bone Village & Forgotten Capital", "desc": "Step-by-step + optional/missable callouts.", "url": "walkthroughs/ffvii/chapter-21.html" },
+            { "title": "Chapter 22 — Icicle Inn & Snowfields", "desc": "Step-by-step + optional/missable callouts.", "url": "walkthroughs/ffvii/chapter-22.html" },
+            { "title": "Chapter 23 — Gaea’s Cliff & Whirlwind Maze", "desc": "Step-by-step + optional/missable callouts.", "url": "walkthroughs/ffvii/chapter-23.html" },
+
+            { "title": "Chapter 24 — Underwater Reactor & Submarine", "desc": "Step-by-step + optional/missable callouts.", "url": "walkthroughs/ffvii/chapter-24.html" },
+            { "title": "Chapter 25 — Rocket Town (Huge Materia)", "desc": "Step-by-step + optional/missable callouts.", "url": "walkthroughs/ffvii/chapter-25.html" },
+            { "title": "Chapter 26 — Fort Condor (Final Battle)", "desc": "Step-by-step + optional/missable callouts.", "url": "walkthroughs/ffvii/chapter-26.html" },
+
+            { "title": "Chapter 27 — Wutai & Optional Characters", "desc": "Step-by-step + optional/missable callouts.", "url": "walkthroughs/ffvii/chapter-27.html" },
+            { "title": "Chapter 28 — Chocobo Breeding & Knights of the Round", "desc": "Step-by-step + optional/missable callouts.", "url": "walkthroughs/ffvii/chapter-28.html" },
+            { "title": "Chapter 29 — Optional Superbattles", "desc": "Step-by-step + optional/missable callouts.", "url": "walkthroughs/ffvii/chapter-29.html" },
+            { "title": "Chapter 30 — Northern Crater Finale", "desc": "Step-by-step + optional/missable callouts.", "url": "walkthroughs/ffvii/chapter-30.html" }
+          ]
+        }
       ]
-    }
-  ]
-}
-
-
+    },
     {
       "id": "FFVIII",
       "label": "Final Fantasy VIII",
